@@ -1,0 +1,67 @@
+/* ----------------------------------------------- */
+/* ----------------------------------------------- */
+/* ----------------------------------------------- */
+/* --------------- HOJA DE ESTILOS --------------- */
+/* ----------------------------------------------- */
+/* ----------------------------------------------- */
+/* ----------------------------------------------- */
+
+/* TÍTULO */
+h2 {
+	text-align: center;
+	font-family: arial;
+	text-decoration: underline;
+	text-shadow: 1px 1px 2px white;
+}
+
+h4 {
+	font-family: arial;
+}
+
+/* CAPAS FORMATO*/
+#capa1, #capa2, #capa3 {
+	border-radius: 10px;
+	box-shadow: 2px 2px 2px black;
+	width: 500px;
+	padding: 10px;
+}
+
+#capa4 {
+	border-radius: 10px;
+	box-shadow: 2px 2px 2px black;
+	width: 200px;
+	padding: 10px;
+}
+
+/* CAJA ROJA */
+#capa1 {
+	background-color: rgba(245, 20, 12, 0.5);
+	/* Posición Absoluta con px desde abajo y dcha */
+	position: absolute;
+	bottom: 170px;
+	right: 50px;
+}
+
+/* CAJA AMARILLA */
+#capa2 {
+	background-color: yellow;
+	/* Posición Absoluta con px desde abajo (izda. predeterminado) */
+	position: absolute;
+	bottom: 30px;
+}
+
+/* CAJA VERDE */
+#capa3 {
+	background-color: #a9d689;
+	position: relative;
+	top: 100px;
+	left: 100px;
+}
+
+	/* CAJA PINK: ubicada dentro de #capa3 */
+	#capa4 {
+		background-color: pink;
+		position: absolute;
+		bottom: 20px;
+		right: 20px;
+	}

@@ -1,0 +1,52 @@
+/* ----------------------------------------------- */
+/* ----------------------------------------------- */
+/* ----------------------------------------------- */
+/* --------------- HOJA DE ESTILOS --------------- */
+/* ----------------------------------------------- */
+/* ----------------------------------------------- */
+/* ----------------------------------------------- */
+
+#caja1 {
+	display: inline-block;
+	width: 200px;
+	background-color: rgb(235, 146, 52);
+	box-shadow: 5px 5px 3px rgba(235, 146, 52, 0.5);		/* Sombra de la Caja: 'X' 'Y' 'Difuminado' 'color' */
+	border: 1px solid rgb(219, 132, 39);
+	border-radius: 0px 10px 0px 10px;						/* Bordes Redondeados: de izda a dcha y de arriba a abajo */
+}
+
+h1 {
+	text-shadow: 3px 2px 3px rgba(0, 0, 0, 0.2);			/* Sombra del Texto */
+	text-align: center;
+	margin-bottom: 10px;
+	font-family: arial;
+}
+
+p {
+	text-align: justify;
+	font-family: arial;
+	margin: 0 10px 20px 10px;
+}
+
+/* FIRST-LINE: Pseudoclase para asignar datos a propiedades primera línea */
+p:first-line {
+	color: blue;
+}
+
+/* FIRST-LETTER: Pseudoclase para asignar datos a propiedades primera letra */
+p:first-letter {
+	font-size: 2em;
+}
+
+
+/* CAJA CONVERTIDA EN CÍRCULO A TRAVÉS DE BORDER-RADIUS */
+#caja2 {
+	display: inline-block;
+	width: 200px;
+	height: 200px;
+	margin-left: 30px;
+	background-color: rgb(235, 146, 52);
+	box-shadow: 5px 5px 3px rgba(235, 146, 52, 0.5);		/* Sombra de la Caja: 'X' 'Y' 'Difuminado' 'color' */
+	border: 1px solid rgb(219, 132, 39);
+	border-radius: 100px					/* Caja Circular utilizando la mitad del tamaño de la caja */
+}

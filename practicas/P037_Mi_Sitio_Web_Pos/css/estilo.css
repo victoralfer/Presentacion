@@ -1,0 +1,258 @@
+/* ----------------------------------------------- */
+/* ----------------------------------------------- */
+/* ----------------------------------------------- */
+/* --------------- HOJA DE ESTILOS --------------- */
+/* ----------------------------------------------- */
+/* ----------------------------------------------- */
+/* ----------------------------------------------- */
+
+/* Fondo del BODY */
+body {
+	background-image: url("../img/fondo.png");
+	background-size: 100%;
+	font-family: verdana;
+}
+
+/* ----- CABECERA ----- */
+header {
+	width: 98%;
+	height: 150px;
+	margin: 0 auto;
+	background-image: url("../img/latierra2.jpg");
+	background-size: 100%;
+	background-repeat: no-repeat;
+	border-radius: 20px 20px 0 0;
+	position: relative;
+}
+
+
+/* Título de Cabecera */
+.headerh2 {
+	position: absolute;
+	top: 40px;
+	left: 20px;
+	color: white;
+	text-decoration: underline;
+}
+
+/* ----- MENÚ HORIZONTAL ----- */
+nav {
+	width: 98%;
+	height: 50px;
+	margin: 0 auto;
+	padding: 0;
+	background-color: blue;
+}
+
+/* Lista de Botones */
+nav ul {
+	list-style-type: none;
+	margin: 0 auto;
+	padding-left: 10px;
+	border-top: 1px solid black;
+}
+
+	/* Elementos de la Lista de Botones */
+	nav ul li {
+		float: left;
+		margin: 11px 45px 0 0;
+		padding: 10px 20px;
+		color: white;
+	}
+
+	/* Hover de los Elementos de la Lista de Botones */
+	nav ul li:hover {
+		background-color: white;
+		color: red;
+		cursor: pointer;
+	}
+
+/* ----- CONTENEDOR PRICIPAL ----- */
+#principal {
+	width: 98%;
+	height: 1200px;
+	margin: 0 auto;
+	position: relative;
+}
+
+/* CONTENEDOR SECTION CON ARTICLES */
+section {
+	width: 71%;
+	height: 1150px;
+	padding-top: 40px;
+	margin-top: 15px;
+	background-color: rgba(41, 87, 186, 0.1);
+	border-radius: 20px 0 0 20px;
+}
+
+	/* CONTENEDORES 'ARTICLES' */
+
+	/* Título 'article' */
+	section article h3 {
+		margin: 0 0 20px 20px;
+		padding: 10px 0px 10px 8px;
+		background-color: rgba(41, 87, 186, 0.3);
+		color: #2957ba;
+		clear: both;
+	}
+
+	/* Lista 'article' */
+	section article ul {
+		list-style-type: none;
+	}
+
+	/* Elementos Lista 'article' */
+	section article ul li {
+		float: left;
+		margin-right: 35px;
+		color: #2957ba;
+		font-size: 0.9em;
+	}
+
+		/* Viñeta personalizada para cada elemento de la lista */
+		.li1 {
+			list-style-image: url("../img/reloj.png");
+			margin-left: 20px;
+		}
+
+		.li2 {
+			list-style-image: url("../img/documento.png");
+		}
+
+		.li3 {
+			list-style-image: url("../img/usuario.png");
+		}
+
+		.li4 {
+			list-style-image: url("../img/comentario.png");
+		}
+
+	/* Hover Elementos Lista 'article' */
+	section article ul li:hover {
+		color: red;
+		cursor: pointer;
+	}
+
+	/* Líneas Separatoria 'article' */
+	section article hr {
+		margin-left: 35px;
+		margin-right: 20px;
+		clear: both;
+		margin-top: 55px;
+	}
+
+	/* Párrafos 'article' */
+	section article p {
+		margin-left: 35px;
+		margin-right: 20px;
+		margin-bottom: 0;
+		text-align: justify;
+	}
+
+	/* Enlaces Seguir Leyendo de 'article' */
+	section article a {
+		margin-left: 35px;
+		color: rgba(41, 87, 186, 0.7);
+	}
+
+	/* Párrafo enlace Seguir Leyendo de 'article' */
+	.enlace	{
+		margin-top: 0px;
+		margin-bottom: 60px;
+	}
+
+
+/* ----- MENÚ VERTICAL ----- */
+aside {
+	width: 28%;
+	height: 1170px;
+	padding-top: 20px;
+	background-color: rgba(41, 87, 186, 0.2);
+	position: absolute;
+	top: 0;
+	right: 10px;
+	border-radius: 0 20px 20px 0;
+}
+
+/* Imagen 'sobre mi' */
+.sobremi img {
+	margin-left: 10px;
+	float: left;
+}
+
+/* Datos 'sobre mi' */
+.sobremi p {
+	margin: 0 10px 0 90px;
+	font-size: 0.8em;
+}
+
+/* Enlace 'sobre mi' */
+.public {
+	clear: both;
+	margin: 20px 0 25px 10px;
+	font-weight: normal;
+}
+
+/* Títulos Menú Vertical */
+
+.categorias h4, .sobremi h4 {
+	background-color: rgba(41, 87, 186, 0.5);
+	padding: 10.5px 25px;
+	margin-top: 20px;
+	text-decoration: underline;
+	font-size: 1.1em;
+	color: #2957ba;
+}
+
+/* Lista Menú Vertical */
+.categorias ul {
+	list-style-type: none;
+	margin-left: 0;
+	margin-bottom: 40px;
+	padding-left: 0;
+}
+
+/* Elementos Lista Menú Vertical */
+.categorias ul li {
+	margin-top: 11px;
+	margin-left: 0;
+	padding: 5px 50px;
+	background-image: url("../img/puntoblanco.png");
+	background-position: left;
+	background-repeat: no-repeat;
+	background-size: 60px;
+	font-size: 0.9em;
+	font-weight: bold;
+}
+
+/* Hover Elementos Lista Menú Vertical */
+.categorias ul li:hover {
+	background-image: url("../img/puntonaranja.png");
+	background-color: white;
+	cursor: pointer;
+}
+
+
+/* ----- FOOTER ----- */
+footer {
+	margin: 10px auto 0 auto;
+	width: 98%;
+	background-color: pink;
+	border-radius: 0 0 10px 10px;
+	bottom: 0;
+	left: 0;
+}
+
+/* Imágenes Footer */
+footer img {
+	width: 150px;
+	margin: 10px;
+	float: left;
+}
+
+/* Texto Footer */
+.footh5 {
+	text-align: right;
+	padding: 8px 20px 8px 0;
+	font-size: 0.7em;
+}

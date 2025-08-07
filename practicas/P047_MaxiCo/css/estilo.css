@@ -1,0 +1,496 @@
+/* ----------------------------------------------- */
+/* ----------------------------------------------- */
+/* ----------------------------------------------- */
+/* --------------- HOJA DE ESTILOS --------------- */
+/* ----------------------------------------------- */
+/* ----------------------------------------------- */
+/* ----------------------------------------------- */
+
+body {
+	font-family: arial;
+	background-image: url("../img/cabecera.png");
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: 0 80px;
+}
+
+/* ----- CONTENEDOR MENÚ HORIZONTAL ----- */
+nav {
+	margin: 0 auto;
+	width: 90%;
+	padding: 15px 0;
+	display: flex;
+	flex-flow: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+	/* Menú Horizontal: Capa Logo */
+	.logo {
+		width: 10%;
+		margin-left: 20px;
+		display: flex;
+		align-items: center;
+		display: none;		/* Logo desactivado en móviles */
+	}
+
+		/* Imagen Logo */
+		.logo img {
+			width: 100%;
+		}
+
+
+	/* Menú Horizontal: Capa Lista */
+	.menuhorizontal {
+		width: 100%;
+		display: flex;
+		flex-flow: row;
+		justify-content: flex-end;
+	}
+
+		/* Menú Horizontal: Lista */
+		.menuhorizontal ul {
+			width: 100%;
+			margin: 0;
+			padding: 0;
+			text-align: center;
+			font-size: 0.8em;
+			list-style-type: none;
+			display: flex;
+			flex-flow: row wrap;
+			justify-content: center;
+			gap: 5px;
+		}
+
+		/* Menú Horizontal: Elementos de la Lista */
+		.menuhorizontal ul li {
+			width: 15%;
+			margin: 0;
+			padding: 14px 8px;
+			border-top: 1px solid white;
+		}
+		
+		/* Hover Menú Horizontal: Elementos de la Lista */
+		.menuhorizontal ul li:hover {
+			border-top: 1px solid rgba(164, 247, 116, 1);
+			background-image: url("../img/flecha.png");
+			background-size: 15px;
+			background-repeat: no-repeat;
+			background-position: bottom;
+			cursor: pointer;
+		}
+	
+	
+/* ----- CABECERA ----- */	
+header {
+	margin: 5px auto 0 auto;
+	width: 90%;
+	display: flex;
+	align-items: center;
+}
+	
+	/* Imagen Cabecera */	
+	header img {
+		width: 100%;
+	}
+	
+/* ----- CONTENEDOR PRINCIPAL ----- */
+section {
+	margin: 10px auto;
+	width: 90%;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	gap: 10px 0;
+}
+
+/* Artículos 'destacados' */
+.destacado {
+	width: 100%;
+	margin: 0 auto;
+}
+
+.destacado:hover {
+	background-color: rgba(164, 247, 116, 0.1);
+	border-radius: 0 0 20px 20px;
+}
+	
+	/* Capa: Título Artículos 'destacados' */
+	.tit {
+		padding: 35px 15px 35px 0;
+		margin-top: 0px;
+		text-align: center;
+		background-color: rgba(164, 247, 116, 0.8);
+	}
+
+		/* Título: Imagen Título 'destacados' */
+		.tit img {
+			width: 15px;
+			margin-right: 5px;
+			display: inline;
+		}
+
+		/* Título: Título 'destacados' */
+		.tit h3 {
+			text-align: center;
+			display: inline;
+		}
+	
+	/* Subtítulo articulos 'destacados' */
+	.destacado h4 {
+		text-align: left;
+		padding: 0 15px;
+	}
+
+	/* Párrafos articulos 'destacados' */	
+	.destacado p {
+		padding: 0 15px;
+		font-size: 0.8em;
+		text-align: justify;
+		color: rgba(58, 117, 21, 0.8);
+	}
+	
+	/* Botón MORE articulos 'destacados' */
+	.destacado h5 {
+		width: 40px;
+		padding: 3px 10px;
+		margin-left: 15px;
+		text-align: center;
+		background-color: rgba(164, 247, 116, 0.3);
+	}
+	
+	/* Hover Botón MORE articulos 'destacados' */
+	.destacado h5:hover {
+		background-color: rgba(164, 247, 116, 1);
+		cursor: pointer;
+	}
+
+/* Artículos 'interés' */
+
+.interes {
+	width: 100%;
+	margin-bottom: 10px;
+	color: rgba(58, 117, 21, 0.8);
+}
+
+	.interes h4 {
+		margin-top: 15px;
+		width: 150px;
+		text-align: center;
+		padding: 8px;
+		color: #3a7515;
+		border: 1px solid green;
+		border-radius: 10px;
+	}
+
+	.interes img {
+		width: 100%;
+	}
+	
+	.interes p {
+		font-size: 0.8em;
+		text-align: justify;
+		padding: 0 15px;
+	}
+	
+	.interes ul {
+		list-style-type: square;
+		font-size: 0.8em;
+		font-style: italic;
+	}
+	
+	
+/* Artículos 'noticias' */
+
+.noticias {
+	width: 100%;
+	margin-bottom: 10px;
+}
+
+	.noticias h4 {
+		width: 150px;
+		text-align: center;
+		margin-top: 15px;
+		padding: 8px;
+		color: #3a7515;
+		border: 1px solid green;
+		border-radius: 10px;
+	}
+
+	.publicacion {
+		width: 100%;
+		margin: 10px auto;
+		display: flex;
+		flex-flow: row;
+	}
+	
+	.publicacion:hover {
+		background-color: rgba(58, 117, 21, 0.1);
+		cursor: pointer;
+		border-radius: 10px;º
+	}
+
+		.fecha {
+			width: 25%;
+			padding: 7px;
+			color: rgba(58, 117, 21, 0.4);
+		}
+		
+			.fecha h2 {
+				margin: 0 5px;
+			}
+		
+		.pubart{
+			width: 75%;
+			padding: 10px 0;
+		}
+		
+			.pubart h5 {
+				margin-top: 0;
+				margin-bottom: 10px;
+				padding: 0 5px;
+				color: rgba(58, 117, 21, 0.9);
+			}
+			
+			.pubart p {
+				margin: 0;
+				padding: 0 5px;
+				margin-right: 10px;
+				font-size: 0.8em;
+				text-align: justify;
+				color: rgba(58, 117, 21, 0.8);
+			}
+			
+	/* Botón MORE articulos 'noticias' */
+	.botonmore {
+		width: 40px;
+		padding: 3px 10px;
+		margin-left: 5px;
+		text-align: center;
+		background-color: rgba(164, 247, 116, 0.3);
+	}
+	
+	/* Hover Botón MORE articulos 'noticias' */
+	.botonmore:hover {
+		background-color: rgba(164, 247, 116, 1);
+		cursor: pointer;
+	}
+	
+
+/* ----- FOOTER ----- */
+footer {
+	width: 90%;
+	margin: 0 auto;
+	display: flex; 
+	flex-flow: row wrap;
+	justify-content: space-between;
+	align-items: center;
+	gap: 30px 0;
+}
+
+	/* Fila Superior con Logos */
+	.footimg {
+		width: 33%;
+		margin: 0;
+		text-align: center;
+	}
+
+			/* Desactivar Logos 4 y 5 */
+			.css-2, .html-2 {
+				display: none;
+			}
+
+		/* Logos */
+		.footimg img {
+			width: 50%;
+		}
+		
+		/* Hover Logos */
+		.footimg img:hover {
+			opacity: 0.4;
+		}
+	
+	/* Fila Inferior: Capa Contacto */
+	.footcontacto {
+		width: 55%;
+		margin-right: 15px;
+	}
+		
+		/* Imagen Contacto */
+		.footcontacto img {
+			width: 40%;
+		}
+		
+		/* Párrafo Contacto */
+		.footcontacto p {
+			margin: 5px 0;
+			font-size: 0.7em;
+		}
+
+		.footcontacto hr {
+			width: 30%;
+			margin-left: 0;
+			margin-right: auto;
+		}
+		
+		/* Copyright Contacto */
+		.footcontacto h5 {
+			font-size: 0.6em;
+			margin-top: 0;
+		}
+	
+	/* Fila Interior: Capa Redes Sociales */
+	.footrs{
+		width: 30%;
+		margin: 0 30px 0 0;
+		padding: 0;
+		display: flex;
+		flex-flow: row;
+		justify-content: space-between;
+	}
+		
+		/* Capas Imágenes Sociales */
+		.imagenrs {
+			width: 25%;
+			margin: 0 5px;
+		}
+		
+			/* Imágenes Redes Sociales */
+			.imagenrs img{
+				width: 100%;
+			}
+			
+			/* Hover Imágenes Redes Sociales */
+			.imagenrs img:hover {
+				opacity: 0.4;
+			}
+
+
+
+/* ----- SPANS ----- */
+
+.negrita {
+	font-weight: bold;
+}
+
+
+/* ----- FORMATO ENLACES ----- */
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+a:hover {
+	color: inherit;
+}
+
+
+
+/* ---------------------------------------------- */
+/* ---------------------------------------------- */
+/* ----------------- RESPONSIVE ----------------- */
+/* ---------------- Mobile First ---------------- */
+/* ---------------------------------------------- */
+/* ---------------------------------------------- */
+
+
+/* --- TAMAÑO A PARTIR DE UNA TABLET --- */
+
+@media (min-width: 768px) {
+
+	/* MENÚ HORIZONTAL */
+	.logo {
+		display: block;
+	}
+
+	.menuhorizontal {
+		width: 80%;
+	}
+
+	.menuhorizontal ul {
+		justify-content: flex-end;
+	}
+
+
+	/* ----- CONTENEDOR PRINCIPAL ----- */
+
+	/* Artículos destacados */
+	.destacado {
+		width: 48%;
+		margin: 0 auto;
+	}
+
+
+	/* Artículos interés y noticias */
+	.interes, .noticias {
+		width: 48%;
+	}
+
+	/* Tamaño imagen Flex-Flow */
+	.interes img {
+		width: 90%;
+	}
+
+
+	/* Párrafo Contacto */
+	.footcontacto p {
+		font-size: 0.8em;
+	}
+
+		
+	/* Copyright Contacto */
+	.footcontacto h5 {
+		font-size: 0.7em;
+	}
+
+
+
+	/* ----- FOOTER ----- */
+
+	/* Fila Superior con Logos */
+	.footimg {
+		width: 20%;				/* Reducir tamaño para incluir 5 logos */
+		margin: 30px 0;
+		text-align: center;
+	}
+
+	.css-2, .html-2 {
+		display: block;			/* Activar 5 logos */
+	}
+
+
+	/* Capas Imágenes Sociales */
+	.imagenrs {
+		width: 15%;
+	}
+
+}
+
+/* --- TAMAÑO A PARTIR DE ESCRITORIO --- */
+
+ @media (min-width: 992px) {
+
+ 	/* Artículos destacados */
+	.destacado {
+		width: 24%;
+		margin: 0 auto;
+	}
+
+	/* Tamaño imagen Flex-Flow */
+ 	.interes img {
+		width: 80%;
+	}
+
+ }
+
+/* --- TAMAÑO A PARTIR DE UN GRAN ESCRITORIO --- */
+
+ @media (min-width: 1200px) {
+ 	
+ 	/* Tamaño imagen Flex-Flow */
+ 	.interes img {
+		width: 70%;
+	}
+
+ }

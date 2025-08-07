@@ -1,0 +1,64 @@
+/* ----------------------------------------------- */
+/* ----------------------------------------------- */
+/* ----------------------------------------------- */
+/* --------------- HOJA DE ESTILOS --------------- */
+/* ----------------------------------------------- */
+/* ----------------------------------------------- */
+/* ----------------------------------------------- */
+
+/* TÍTULO */
+h2 {
+	text-align: center;
+	font-family: arial;
+	text-decoration: underline;
+	text-shadow: 1px 1px 2px white;
+}
+
+h4 {
+	font-family: arial;
+}
+
+/* CAPA CON POSICIONAMIENTO FLOTANTE */
+#flotante {
+	background-color: pink;
+	padding: 20px;
+	border-radius: 10px;
+	box-shadow: 2px 2px 2px black;
+	width: 90%;
+}
+
+#flotante:hover {
+	border: 1px solid blue;
+	cursor: pointer;
+}
+
+/* IMAGEN CON FLOAT: LEFT */
+.floatl {
+	width: 100px;
+	float: left;
+	margin-right: 15px;		/* Margen con respecto al párrafo */
+}
+
+/* IMAGEN CON FLOAT: RIGHT */
+.floatr {
+	width: 50px;
+	float: right;
+	margin-left: 15px;		/* Margen con respecto al párrafo */
+}
+
+/* PÁRRAFO */
+p {
+	text-align: justify;
+	font-family: arial;
+	font-size: 0.9em;
+}
+
+.p2 {
+	clear: both;			/* Propiedad para que no flote sobre la imagen*/
+}
+
+p:first-letter {
+	font-size: 1.5em;
+	font-weight: bold;
+	color: blue;
+}

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+
+		<meta charset="utf-8">
+		<meta name="author" content="Víctor">
+		<meta name="description" content="Información sobre mi sitio web">
+		<meta name="keywords" content="css, margin, padding, border, contenedores">
+		<meta name="robots" content="index,follow">
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximun-scale=1.5, miniman-scale=0.8">
+		
+		<link rel="stylesheet" type="text/css" href="css/estilo.css">
+
+		<title>Prácticas Víctor Álvarez</title>
+
+	</head>
+
+	<body>
+
+		<header>
+
+			<img src="img/cabecera_proy.png" alt="cabecera de proyecto curso">
+
+		</header>
+		
+
+		<!-- MENÚ NAV -->
+		<nav>
+			<ul>
+				<a href="index.html"><li>Proyectos</li></a>
+				<a href="apuntes.html"><li>HTML</li></a>
+				<a href="apuntes_css.html"><li>CSS</li></a>
+			</ul>
+
+		</nav>
+
+		<!-- TÍTULO -->
+
+		<div id="titulo">
+
+			<a href="index3.html"><img src="img/flechaizquierda.png" class="flechai"></a>
+
+			<h1>PRÁCTICAS</h1>
+
+			<a href="index5.html"><img src="img/flechaderecha.png" class="flechad"></a>
+			
+		</div>
+
+
+		<!-- CONTENEDOR PRINCIPAL: Inlcuye contenedores de Proyectos -->
+
+		<div id="principal">
+
+		<a href="practicas/P031_Hoja_CSS/index.html" class="proyecto" target="_blank">
+				<h3>Práctica 31</h3>
+				<h6>HOJA DE ESTILOS CSS</h6>
+				<img src="img/html5.png" alt="logo de html5">	
+			</a>
+
+			<a href="practicas/P032_Florencia_CSS/index.html" class="proyecto" target="_blank">
+				<h3>Práctica 32</h3>
+				<h6>EJERCICIO FLORENCIA</h6>
+				<img src="img/html5.png" alt="logo de html5">	
+			</a>
+
+			<a href="practicas/P033_Propiedades_Varias/index.html" class="proyecto" target="_blank">
+				<h3>Práctica 33</h3>
+				<h6>PROP. VARIAS CSS</h6>
+				<img src="img/html5.png" alt="logo de html5">	
+			</a>
+
+			<a href="practicas/P034_CSS_Sistema_Solar/index.html" class="proyecto" target="_blank">
+				<h3>Práctica 34</h3>
+				<h6>EJER. SISTEMA SOLAR</h6>
+				<img src="img/html5.png" alt="logo de html5">	
+			</a>
+
+			<a href="practicas/P035_Hola_CSS/index.html" class="proyecto" target="_blank">
+				<h3>Práctica 35</h3>
+				<h6>EJERCICIO HOLA!</h6>
+				<img src="img/html5.png" alt="logo de html5">	
+			</a>
+
+			<a href="practicas/P036_Mi_Sitio_Web/index.html" class="proyecto" target="_blank">
+				<h3>Práctica 36</h3>
+				<h6>EJER. MI SITIO WEB</h6>
+				<img src="img/html5.png" alt="logo de html5">	
+			</a>
+
+			<a href="practicas/P037_Mi_Sitio_Web_Pos/index.html" class="proyecto" target="_blank">
+				<h3>Práctica 37</h3>
+				<h6>EJER. MI SITIO WEB POS.</h6>
+				<img src="img/html5.png" alt="logo de html5">	
+			</a>
+
+			<a href="practicas/P038_Jerarquías/index.html" class="proyecto" target="_blank">
+				<h3>Práctica 38</h3>
+				<h6>EJERCICIO JERARQUÍAS</h6>
+				<img src="img/html5.png" alt="logo de html5">	
+			</a>
+
+			<a href="practicas/P039_Hover_Menu/index.html" class="proyecto" target="_blank">
+				<h3>Práctica 39</h3>
+				<h6>EJERCICIO HOVER</h6>
+				<img src="img/html5.png" alt="logo de html5">	
+			</a>
+
+			<a href="practicas/P040_Sombras_Bordes/index.html" class="proyecto" target="_blank">
+				<h3>Práctica 40</h3>
+				<h6>SOMBRAS Y BORDES</h6>
+				<img src="img/html5.png" alt="logo de html5">	
+			</a>
+
+		</div>
+
+		<!-- MENÚ INFERIOR PÁGINAS PARA DISPOSITIVOS PEQUEÑOS, MÓVILES Y TABLETS -->
+
+		<div>
+			<ul class="paginas">
+				<a href="index.html"><li>1</li></a>
+				<a href="index2.html"><li>2</li></a>
+				<a href="index3.html"><li>3</li></a>
+				<a href="#"><li>4</li></a>
+				<a href="index5.html"><li>5</li></a>
+				<a href="index6.html"><li>6</li></a>
+			</ul>
+		</div>
+
+		<!-- NO DESACTIVA INDEX2 Y SUCESIVOS EL MENÚ INFERIOR 'PÁGINAS' CUANDO SE CAMBIA A ESCRITORIOS -->
+		<style>
+			@media (min-width: 993px) {
+					/* Desactivar Menú Páginas */
+					.paginas {
+						display: block;
+					}
+			}
+		</style>
+
+		<!-- PIE DE PÁGINA -->
+		<footer>
+
+			<div class="f1">
+
+				<img src="img/ministerio.png" class="footermin">
+
+			</div>
+			
+			<div class="f2">
+
+				<p>Copyright @ 2025 Víctor Álvarez</p>
+
+			</div>
+
+		</footer>
+
+	</body>
+
+</html>

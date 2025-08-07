@@ -1,0 +1,53 @@
+/* ----------------------------------------------- */
+/* ----------------------------------------------- */
+/* ----------------------------------------------- */
+/* --------------- HOJA DE ESTILOS --------------- */
+/* ----------------------------------------------- */
+/* ----------------------------------------------- */
+/* ----------------------------------------------- */
+
+/* CONTENDOR NARANJA */
+#contenedor {
+	background-color: orange;
+	width: 200px;
+	height: 300px;
+}
+
+/* CONTENDOR AMARILLO */
+#contenedor2 {
+	background-color: yellow;
+	width: 80%;
+}
+
+/* PÁRRAFOS */
+p {
+	margin-left: 20px;
+	margin-right: 20px;
+	margin-top: 10px;
+	padding-top: 10px;
+}
+
+/* LISTAS CON SELECTOR DE JERARQUÍA EN LAS 'LI' */
+ul {
+	padding: 20px 40px;
+}
+
+.primero li {
+	margin-top: 20px;
+}
+
+#contenedor2 .primero li {
+	font-family: arial black;
+}
+
+/* SELECTOR DE GRUPOS */
+
+p, li {
+	text-decoration: underline;
+}
+
+/* PSEUDOCLASE 'HOVER': Cambia datos de las propiedades indicadas */
+
+li:hover {
+	background-color: lightblue;
+}

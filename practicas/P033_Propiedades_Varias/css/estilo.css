@@ -1,0 +1,193 @@
+/* --------------------------- */
+/* --------------------------- */
+/* ----- HOJA DE ESTILOS ----- */
+/* --------------------------- */
+/* --------------------------- */
+
+/* TÍTULOS H1 */
+h1 {
+	font-family: verdana;
+	text-decoration: underline 5px green;
+	color: blue;
+	text-align: center;
+}
+
+/* TODOS LOS PÁRRAFOS */
+p {
+	font-family: arial;
+	font-style: italic;
+	font-size: 20px;
+}
+
+/* PÁRRAFOS DE CLASE 'dos' */
+.dos {
+	font-family: calibri;
+	font-weight: bold;
+	font-size: 1.2em;
+}
+
+/* PÁRRAFOS DE CLASE 'cuatro' */
+.cuatro {
+	font-variant: small-caps;
+	color: red;
+}
+
+span {
+	font-family: arial black;
+	color: green;
+}
+
+/* MARQUESINA COMPLETA */
+
+	/* Contenedor de la marquesina */
+	.contenedor1 {
+		text-align: center;
+	}
+
+	/* Marquesina */
+	marquee {
+		background-color: yellow;
+		width: 75%;
+		border: 1px solid blue;
+	}
+
+	/* Título de la Marquesina */
+	h3{
+		color: brown;
+		font-family: arial;
+		font-style: italic;
+	}
+
+/* BARRA SEPARADORA */
+hr {
+	width: 50%;
+	height: 0.5em;
+	background-color: pink;
+}
+
+/* ----- PROPIEDADES PÁRRAFOS ----- */
+
+h2 {
+	font-family: arial black;
+	color: #7a14a6;
+	text-align: center;
+}
+
+/* SANGRÍAS 'text-indent' Y ALINEACIÓN DE TEXTOS 'text-align' */
+
+	.sangria1 {
+		text-indent: 30px;
+		font-family: verdana;
+		font-style: normal;
+		text-align: justify;
+		line-height: 30px;
+	}
+
+	.letragrande {
+		color: green;
+		font-size: 1.3em;
+		font-weight: bold;
+	}
+
+/* TEXT-DECORATION: SUBRAYADOS */
+
+	/* Subrayados: 'underline' y 'overline' */
+
+	/* Tachado */
+	.tachado {
+		text-decoration: line-through;
+		color: #6b1e16;
+		font-weight: normal;
+		font-family: verdana;
+	}
+
+	/* Quitar líneas de subrayado: se utilizan en menús */
+
+		/* Título h4 para enlace de ancla */
+		h4 {
+			text-align: center;
+			font-family: calibri;
+			color: orange;
+			letter-spacing: 3px;
+		}
+
+		/* Quitar línea a los enlaces <a href> */
+		.sinsubrayado {
+			text-decoration: none;
+		}
+
+/* TEXT-TRANSFORM: CONVERTIR A MAYÚSCULAS */
+
+	/* 'uppercase' --> Todas las letras en mayúsculas */
+	.mayus {
+		text-transform: uppercase;
+		color: black;
+		font-family: calibri;
+	}
+
+	/* 'capitalize' --> Primera letra de cada palabra en mayúsculas */
+	.capitalize {
+		text-transform: capitalize;
+		color: #b85c35;
+		font-family: calibri;
+	}
+	
+/* BORDES, RELLENOS Y MÁRGENES */
+	
+	.h3center {
+		text-align: center;
+		text-decoration: underline;
+	}
+
+	/* Bordes */
+	.border {
+		border: 2px solid blue;
+	}
+	
+	.borderpunteado {
+		border-left: 3px dotted green;
+	}
+	
+	.borderdouble {
+		border-right: 3px double orange;
+	}
+
+
+	/* Rellenos */
+	.padding {
+		padding: 20px 50px 15px 25px;
+	}
+	
+	.padding2 {
+		padding-left: 15px;
+	}
+	
+	.padding3 {
+		padding-right: 15px;
+	}
+
+	/* Márgenes */
+	.margin {
+		margin: 10px;
+	}
+	
+	.margin2 {
+		margin-left: 10px;
+	}
+	
+	.margin3 {
+		margin-right: 10px;
+	}
+	
+	
+/* CONTENEDOR id 'margin: auto;' CENTRADO CON margin: auto; */	
+#marginauto {
+	margin: 0 auto;
+	width: 75%;
+	border: 2px solid pink;
+	padding: 20px;
+}
+
+.parrafocero {
+	margin: 0;
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Flexbox: align-items vs align-content</title>
+  <style>
+    .contenedor {
+      display: flex;
+      flex-wrap: wrap;
+      height: 300px;
+      width: 300px;
+      border: 3px solid #333;
+      gap: 10px;
+      padding: 10px;
+
+      /* Cambia estos valores para ver el efecto */
+      align-items: flex-end;     /* Alinea los elementos en cada línea */
+         /* Alinea todas las líneas en el centro */
+    }
+
+    .item {
+      width: 80px;
+      height: 60px;
+      background-color: cornflowerblue;
+      color: white;
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Flexbox: align-items vs align-content</h2>
+
+  <div class="contenedor">
+    <div class="item">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
+   <!-- <div class="item">4</div>
+    <div class="item">5</div>
+    <div class="item">6</div>
+    <div class="item">7</div>
+    <div class="item">8</div> -->
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,78 @@
+/* --------------------------- */
+/* --------------------------- */
+/* ----- HOJA DE ESTILOS ----- */
+/* --------------------------- */
+/* --------------------------- */
+
+body {
+	background-color: #918917;
+	margin: 0;
+}
+
+#imagen {
+	text-align: center;
+	margin-left: 20px;
+	margin-bottom: 20px;
+}
+
+img {
+	width: 100%;
+	margin-top: 5px;
+}
+
+#principal {
+	margin: 0 20px;
+	background-color: #918917;
+	border-right: 10px outset rgba(140, 72, 45, 0.2); 
+	border-left: 10px outset rgba(140, 72, 45, 0.2);
+}
+
+#principal2 {
+	background-color: white;
+	padding-right: 20px;
+	padding-bottom: 10px;
+}
+
+p {
+	text-align: justify;
+	font-family: arial;
+}
+
+hr {
+	margin-left: 20px;
+}
+
+/* CONTENDOR 1 */
+
+h1 {
+	color: #918917;
+	font-family: calibri;
+	margin-top: 2px;
+}
+
+#uno, #dos, #tres, #cuatro {
+	background-color: white;
+	margin-left: 100px;
+}
+
+.uno-uno {
+	color: #918917;
+}
+
+.linea-discontinua {
+	background-color: #e2eb3f;
+	color: #8c492d;
+	font-weight: bold;
+	border: 3px dashed red;
+	padding: 20px;
+	margin-bottom: 30px;
+}
+
+h2, h3 {
+	color: #918917;
+	margin-top: 10px;
+}
+
+h2, h3, h4 {
+	font-family: calibri;
+}

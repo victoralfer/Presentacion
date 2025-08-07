@@ -1,0 +1,54 @@
+/* --------------------------- */
+/* --------------------------- */
+/* ----- HOJA DE ESTILOS ----- */
+/* --------------------------- */
+/* --------------------------- */
+
+/* SELECTOR CONTENEDOR DIV */
+
+body {
+	background-color: rgba(209, 255, 217, 0.9);
+}
+		
+div {
+	background-color: pink;
+	background-image: url("../img/sol.jpg");
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-position: bottom;
+	margin: 10px;
+	padding: 10px;
+	border: 2px solid blue;
+}
+		
+/* SELECTOR DE PÁRRAFOS */
+	/* RGB: Valores del 0 al 255 */
+	/* RGBA: Valores entre 0 y 1 */
+
+p {
+	background-color: rgba(252, 245, 109, 0.7);
+	font-size: 25px;
+	text-align: center;
+	font-family: calibri;
+	padding: 10px;
+}
+			
+/* SELECTOR CLASS 'uno' (es un párrafo) */
+.uno {
+	background-color: black;
+	color: white;
+	padding: 20px;
+	font-family: arial;
+	font-weight: bold;
+	font-style: italic;
+	width: 80%;
+	margin: auto;
+}
+
+/* SELECTOR CLASS 'dos' (es una capa) */
+	/* BACKGROUND-POSITION CON PÍXELES (X,Y) */
+.dos {
+	background-color: lightblue;
+	background-position: 5px 5px;
+	background-size: 50%;
+}

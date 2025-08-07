@@ -1,0 +1,79 @@
+/* --------------------------- */
+/* --------------------------- */
+/* ----- HOJA DE ESTILOS ----- */
+/* --------------------------- */
+/* --------------------------- */
+
+body {
+	background-color: #ddede7;
+	text-align: center;
+}
+
+h1 {
+	font-family: verdana;
+	color: #4ba39a;
+	text-align: right;
+	letter-spacing: 20px;
+}
+
+h3 {
+	background-color: #356e59;
+	color: white;
+	font-family: verdana;
+	text-align: left;
+	padding: 2px;
+}
+
+p {
+	text-align: justify;
+	font-family: arial;
+}
+
+/* SPAN: Negrita y Cursiva */
+span {
+	font-weight: bold;
+	font-style: italic;
+}
+
+/* TABLA */
+
+table {
+	border-collapse: collapse;
+	text-align: center;
+}
+
+/* Celdas - Alineación Vertical */
+td {
+	vertical-align: top;
+}
+
+/* ---- FIORE ---- */
+
+/* Fiore - Imagen */
+.fiore {
+	width: 200px;
+}
+
+/* Fiore - Celda */
+.fioretd {
+	width: 200px;
+	padding: 0;
+}
+
+/* Fiore - Título */
+.fioreh3 {
+	padding-left: 5px;
+}
+
+/* Fiore - Párrafo */
+.fiorep {
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+/* ---- CROCE ---- */
+
+/* Croce - Imagen */
+.croce {
+	width: 300px;
+}

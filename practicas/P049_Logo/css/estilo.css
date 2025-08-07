@@ -1,0 +1,689 @@
+/* ----------------------------------------------- */
+/* ----------------------------------------------- */
+/* ----------------------------------------------- */
+/* --------------- HOJA DE ESTILOS --------------- */
+/* ----------------------------------------------- */
+/* ----------------------------------------------- */
+/* ----------------------------------------------- */
+
+body {
+	font-family: arial;
+	background-image: url("../img/fondo-marino.jpg");
+	background-size: 100%;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+/* ----- CABECERA ----- */
+header {
+	width: 100%;
+	margin: 15px auto 0 auto;
+	padding: 0;
+	background-image: url("../img/cabecera.jpg");
+	background-size: 100%;
+	background-repeat: no-repeat;
+	border-radius: 20px 20px 0 0;
+	position: relative;
+}
+
+	/* Imagen Cabecera */
+	header img {
+		margin: 0 auto;
+		width: 100%;
+	}
+	
+	/* Logo Bandera */
+	.logo {
+		width: 25%;
+		position: absolute;
+		top: 5px;
+		right: 5px;
+	}
+
+
+	/* Logo Paraiso */
+	.logo-paraiso {
+		width: 25%;
+		position: absolute;
+		top: 40px;
+		left: 20px;
+	}
+
+		/* Logos Cabecera */
+		.logo:hover, .logo-paraiso:hover {
+			opacity: 0.7;
+		}
+
+	
+	/* ----- MENÚ HORIZONTAL ----- */
+	nav {
+		margin: 0 auto;
+	}
+
+		/* Lista Menú Horizontal */
+		nav ul {
+			width: 100%;
+			padding: 0;
+			margin: 0;
+			list-style-type: none;
+			display: flex;
+			flex-flow: row;
+			justify-content: space-around;
+			align-items: center;
+		}
+		
+			/* Elementos Lista Menú Horizontal */
+			nav ul li {
+				width: 20%;
+				padding: 10px 0;
+				text-align: center;
+				background-color: rgba(0, 0, 0, 0.5);
+				color: white;
+				font-weight: bold;
+				font-size: 0.75em;
+			}
+			
+				/* Elemento Inicio - Lista Menú Horizontal */
+				.liesp {
+					width: 10%;
+				}
+					
+			
+			/* Hover Elementos Lista Menú Horizontal */
+			nav ul li:hover {
+				color: blue;
+				background-color: white;
+				cursor: pointer;
+			}
+
+
+/* ----- SECTION 1 ----- */			
+.section1 {
+	width: 100%;
+	margin: 0 auto;
+	padding: 9px 0;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-evenly;
+	gap: 10px 5px;
+	background-color: white;
+}
+
+	/* Columnas - Section 1 */
+	.barra {
+		width: 47%;
+	}
+		
+		/* Columna 1- Section 1 */
+		.uno {
+			background-color: rgba(90, 148, 179, 0.2);
+		}
+		
+			/* Hover Columna 1- Section 1 */
+			.uno:hover {
+				background-color: rgba(123, 175, 145, 0.8);
+				color: white;
+				cursor: pointer;
+			}
+		
+		/* Columna 2- Section 1 */
+		.dos {
+			background-color: rgba(90, 148, 179, 0.4);
+		}
+		
+			/* Hover Columna 2- Section 1 */
+			.dos:hover {
+				background-color: rgba(123, 175, 145, 0.6);
+				cursor: pointer;
+			}
+		
+		/* Columna 3- Section 1 */
+		.tres {
+			background-color: rgba(90, 148, 179, 0.6);
+			border-radius: 0 0 20px 20px;
+		}
+		
+			/* Hover Columna 3- Section 1 */
+			.tres:hover {
+				background-color: rgba(123, 175, 145, 0.4);
+				cursor: pointer;
+			}
+		
+		/* Columna 4- Section 1 */
+		.cuatro {
+			background-color: rgba(90, 148, 179, 0.8);
+			border-radius: 0 0 20px 20px;
+			color: white;
+		}
+		
+			/* Hover Columna 4- Section 1 */
+			.cuatro:hover {
+				background-color: rgba(123, 175, 145, 0.2);
+				cursor: pointer;
+				color: black;
+			}
+	
+		/* Título Columnas- Section 1 */
+		.barra h2 {
+			text-align: center;
+			color: white;
+			text-shadow: 1px 1px 2px black;
+			font-size: 1em;
+		}
+	
+		/* Párrafo Columnas- Section 1 */
+		.barra p {
+			padding: 0 12px;
+			text-align: center;
+			font-size: 0.8em;
+		}
+		
+		/* Botón Columnas- Section 1 */
+		.barra h4 {
+			width: 40%;
+			margin: 5px auto 10px auto;
+			padding: 8px;
+			text-align: center;
+			font-size: 0.8em;
+			border-radius: 40px;
+		}
+		
+			/* Hover Botón Columnas- Section 1 */
+			.barra h4:hover {
+				background-color: white;
+				color: black;
+				box-shadow: 2px 2px 3px black;
+				cursor: pointer;
+			}
+
+	/* Fila Búsqueda - Section 1 */
+	.search {
+		margin: 10px 10px 5px auto;
+		display: flex;
+		flex-flow: row;
+		align-items: center;
+	}
+		
+		/* Campo de Texto Fila Búsqueda */
+		.caja {
+			width: 180px;
+			height: 20px;
+			margin-right: 15px;
+			border: 1px solid grey;
+			display: inline-block;
+		}
+			
+			/* Hover Campo de Texto Fila Búsqueda */
+			.caja:hover {
+				cursor: pointer;
+				border: 1px solid black;
+			}
+			
+		/* Título Bóton Fila Búsqueda - Section 1 */
+		.search h4 {
+			margin: 0 auto;
+			padding: 8px;
+			width: 70px;
+			text-align: center;
+			font-size: 0.8em;
+			display: inline-block;
+		}
+			
+			/* Hover Título Bóton Fila Búsqueda - Section 1 */
+			.search h4:hover {
+				background-color: rgba(123, 175, 145, 0.4);
+				cursor: pointer;
+			}
+
+
+/* ----- CONTENEDOR PRINCIPAL: ASIDE + SECTION 2 ----- */	
+#principal {
+	width: 100%;
+	margin: 0 auto 40px auto;
+	padding-bottom: 15px;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	background-color: white;
+	border-radius: 0 0 20px 20px;
+}
+
+
+	/* ----- ASISE ----- */	
+	aside {
+		margin: 0 auto;
+		width: 100%;
+		order: 2;
+		text-align: center;
+	}	
+
+		/* Imagen TOP 5 ASIDE */
+		aside img {
+			width: 50%;
+			margin: 10px auto 20px auto;
+		}
+
+		/* Títulos ASIDE */
+		aside h4 {
+			width: 85%;
+			margin: 0 auto;
+			padding: 5px;
+			text-align: center;
+			border: 3px double rgba(90, 148, 179, 0.8);
+			color: rgba(90, 148, 179, 1);
+		}
+
+			/* Separación Secciones ASIDE */
+			.titsep {
+				margin-top: 20px;
+			}
+
+		/* Listas ASIDE */
+		aside ul {
+			width: 90%;
+			margin: 0 auto;
+			padding: 5px 0;
+			list-style-type: none;
+			display: flex;
+			flex-flow: row wrap;
+			justify-content: space-around;
+		}
+
+
+			/* Elementos de las Listas ASIDE */
+			aside ul li {
+				width: 25%;
+				margin: 5px 0;
+				padding: 8px;
+				font-size: 0.9em;
+				font-weight: bold;
+			}
+
+				/* Hover Elementos de las Listas ASIDE */
+				aside ul li:hover {
+					background-color: rgba(90, 148, 179, 0.3);
+					cursor: pointer;
+				}
+
+
+
+	/* ----- SECTION 2 ----- */	
+	.section2 {
+		margin: 0 auto;
+		width: 100%;
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: space-evenly;
+		align-content: flex-start;
+		row-gap: 10px;
+		order: 1;
+	}
+
+
+		/* Título Noticias */
+		.proxev {
+			width: 90%;
+			margin: 20px auto 10px auto;
+			color: rgba(90, 148, 179, 0.8);
+		}
+
+
+		/* Capas Noticias */	
+		.noticia {
+			width: 90%;
+			margin: 0 auto;
+			padding: 10px 10px 30px 10px;
+			text-align: center;
+			border-radius: 20px;
+		}
+		
+			/* Hover Noticias */
+			.noticia:hover {
+				background-color: rgba(90, 148, 179, 0.1);
+				cursor: pointer;
+			}
+			
+
+			/* Capa de Imágenes - Noticias */
+			.noticiaimg {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				overflow: hidden;
+				border-radius: 20px;
+			}
+
+				/* Imágenes Capa de Imágenes - Noticias */
+				.noticiaimg img {
+					width: 100%;
+				}
+
+					/* Hover Imágenes Capa de Imágenes - Noticias */
+					.noticiaimg img:hover {
+						transform: scale(1.01);
+					}
+					
+			/* Título - Noticias */	
+			.noticia h4 {
+				text-align: left;
+				font-size: 1.2em;
+				margin: 20px 10px 5px 5px;
+				color: rgba(123, 175, 145, 1);
+			}
+
+			/* Capas Icono + Títulos Noticias */
+			.noticiaicono {
+				display: flex;
+				flex-flow: row;
+				justify-content: left;
+				align-items: center;
+			}
+
+				/* Iconos */
+				.icono {
+					width: 14px;
+					margin-left: 8px;
+				}
+
+				/* Fecha - Noticias */	
+				.noticia h5 {
+					text-align: left;
+					font-size: 1em;
+					margin: 5px 10px;
+					color: rgba(123, 175, 145, 0.8);
+					display: inline-block;
+				}
+
+
+			/* Capa Botón 'Ver más noticias' */
+			.news {
+				width: 100%;
+				margin: 5px 0;
+				padding: 0;
+			}
+
+				/* Título Capa Botón 'Ver más noticias' */
+				.news h5 {
+					width: 120px;
+					margin: 10px 10px 10px auto;
+					padding: 10px;
+					text-align: center;
+				}
+
+					/* Hover Título Capa Botón 'Ver más noticias' */
+					.news h5:hover {
+						background-color: rgba(123, 175, 145, 0.4);
+						cursor:	pointer;
+					}
+
+
+			/* Capas Rutas y Festivales */
+			.rutas, .festivales {
+				margin: 5px auto;
+				width: 90%;
+				list-style-image: url("../img/iconos/check.png");
+			}
+
+				/* Títulos Capas Rutas y Festivales */
+				.rutas h2, .festivales h2 {
+					margin: 0 0 10px 0;
+					padding: 5px;
+					color: rgba(123, 175, 145, 1);
+				}
+
+				/* Listas Capas Rutas y Festivales */
+				.check ul {
+					margin: 0 0 20px 0;
+					padding-left: 25px;
+				}
+						
+					/* Elementos Listas Capas Rutas y Festivales */
+					.check ul li {
+						padding: 10px 5px;
+						margin: 4px 20px 4px 4px;
+						font-size: 0.9em;
+					}
+					
+						/* Hover Elementos Listas Capas Rutas y Festivales */
+						.check ul li:hover {
+							background-color: rgba(123, 175, 145, 0.2);
+							cursor: pointer;
+						}
+
+footer {
+	margin: -20px auto 18px auto;
+	width: 100%;
+}
+
+	footer h5 {
+		margin: 0 10px 0 auto;
+		text-align: right;
+		color: rgba(255, 255, 255, 0.2);
+		font-style: italic;
+	}
+			
+			
+			
+/* ---------------------------------------------------------- */			
+/* ---------------------------------------------------------- */	
+/* ---------------------------------------------------------- */	
+/* ----------------------- RESPONSIVE ----------------------- */	
+/* ---------------------- First Mobile ---------------------- */	
+/* ---------------------------------------------------------- */
+/* ---------------------------------------------------------- */
+/* ---------------------------------------------------------- */	
+	
+			
+/* ----- TAMAÑO A PARTIR DE TABLETS ----- */
+
+@media (min-width: 768px) {
+
+	/* TAMAÑO CAPAS PRINCIPALES */
+	header, .section1, #principal, footer {
+		width: 95%;
+	}
+
+		/* -- SECTION 1 -- */
+
+		/* Tamaño 4 Columnas - Section 1 */
+		.barra {
+			width: 23%;
+		}
+
+		/* Añadir Bordes Inferiores Columnas 1 y 2 - Section 1 */
+		.uno, .dos {
+			border-radius: 0 0 20px 20px;
+		}
+
+	/* TAMAÑO PADDING CAPA PRINCIPAL: ASIDE + SECTION 2 */
+	#principal {
+		padding-bottom: 5px;
+	}
+
+		/* -- PRINCIPAL: ASIDE + SECTION 1 -- */
+
+			/* CAPA ASIDE */
+			aside {
+				order: 1;
+				width: 24%;
+				text-align: left;
+			}
+
+				/* Imagen TOP 5 ASIDE */
+				aside img {
+					width: 100%;
+				}
+
+				/* Títulos CAPA ASIDE */
+				aside h4 {
+					width: 60%;
+					margin-left: 10px;
+					padding: 8px auto 8px 0;
+					text-align: left;
+					border: none;
+					border-bottom: 1px solid rgba(90, 148, 179, 0.2);
+				}
+
+				/* Activar Lista Vertical ASIDE */
+				aside ul {
+					margin-left: 10px;
+					display: block;
+				}
+
+					/* Elementos Lista Vertical ASIDE */
+					aside ul li {
+						width: 50%;
+						border-radius: 0 20px 20px 0;
+						font-size: 0.8em;
+					}
+
+
+			/* CAPA SECTION 2 */
+			.section2 {
+				order: 2;
+				width: 74%;
+				margin: 0 auto;
+				gap: 0px;
+			}
+
+				/* Tamaño 3 Columnas - Section 2 */
+				.noticia {
+					width: 27%;
+					text-align: center;
+				}
+
+					/* Títulos - Tamaño 3 Columnas - Section 2 */
+					.noticia h4 {
+						margin-top: 10px;
+						font-size: 0.9em;
+					}
+
+					/* Lugar y Fecha - Tamaño 3 Columnas - Section 2 */
+					.noticia h5 {
+						font-size: 0.8em;
+					}
+
+
+
+				/* Tamaño 2 Columnas - Section 2 */
+				.rutas, .festivales {
+					width: 48%;
+					margin: 0 auto;
+				}
+				
+					/* Títulos 2 Columnas - Section 2 */
+					.rutas h2, .festivales h2 {
+						font-size: 1.1em;
+					}
+					
+					/* Elementos Lista 2 Columnas - Section 2 */
+					.rutas ul li, .festivales ul li {
+						margin: 2px;
+						padding: 8px 4px;
+						font-size: 0.8em;
+					}
+
+
+
+}
+
+
+/* ----- TAMAÑO A PARTIR DE ESCRITORIOS ----- */
+
+@media (min-width: 1024px) {
+
+	/* Elementos de la Lista del Menú Horizontal */
+	nav ul li {
+		font-size: 1em;
+	}
+
+	/* -- SECTION 1 -- */
+
+		/* Títulos - Section 1 */
+		.barra h2 {
+			font-size: 1.2em;
+		}
+
+		/* Párrafos - Section 1 */
+		.barra p {
+			font-size: 1em;
+		}
+		
+		/* Botón 'Buscar' - Section 1 */
+		.search h4 {
+			margin-right: 10px;
+		}
+
+	/* -- ASIDE -- */
+	aside {
+		width: 20%;
+	}
+
+		/* Títulos - ASIDE */
+		aside h4 {
+			font-size: 1.1em;
+		}
+
+		/* Elementos Lista - ASIDE */
+		aside ul li {
+			font-size: 1em;
+		}
+
+	/* -- SECTION 2 -- */
+	.section2 {
+		width: 77%;
+		font-size: 1.2em;
+	}
+
+		/* Noticias - SECTION 2 */
+		.noticia {
+			width: 30%;
+
+		}
+		
+		/* Título Capa Botón 'Ver más noticias' */
+		.news h5 {
+			width: 140px;
+		}
+		
+		.proxev {
+			margin-left: 25px;
+		}
+
+}
+
+
+
+/* ----- TAMAÑO A PARTIR DE GRANDES ESCRITORIOS ----- */
+
+@media (min-width: 1440px) {
+
+	/* -- ASIDE -- */
+	aside {
+		width: 15%;
+	}
+
+	/* -- SECTION 2 -- */
+	.section2 {
+		width: 82%;
+	}
+
+		/* Noticias - SECTION 2 */
+		.noticia {
+			width: 31%;
+		}
+		
+
+}
+
+
+/* ----- TAMAÑO PEQUEÑOS DISPOSITIVOS ----- */
+
+@media (max-width: 575px) {
+	aside ul li {
+		width: 30%;
+	}
+}

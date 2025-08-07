@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+
+		<meta charset="utf-8">
+		<meta name="author" content="Víctor">
+		<meta name="description" content="Información sobre mi sitio web">
+		<meta name="keywords" content="css, margin, padding, border, contenedores">
+		<meta name="robots" content="index,follow">
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximun-scale=1.5, miniman-scale=0.8">
+		
+		<link rel="stylesheet" type="text/css" href="css/estilo.css">
+
+		<title>Prácticas Víctor Álvarez</title>
+
+	</head>
+
+	<body>
+
+		<header>
+
+			<img src="img/cabecera_proy.png" alt="cabecera de proyecto curso">
+
+		</header>
+		
+
+		<!-- MENÚ NAV -->
+		<nav>
+			<ul>
+				<a href="index.html"><li>Proyectos</li></a>
+				<a href="apuntes.html"><li>HTML</li></a>
+				<a href="apuntes_css.html"><li>CSS</li></a>
+			</ul>
+
+		</nav>
+
+		<!-- TÍTULO -->
+
+		<div id="titulo">
+
+			<a href="index5.html"><img src="img/flechaizquierda.png" class="flechai"></a>
+
+			<h1>PRÁCTICAS</h1>
+
+			<a href="#"><img src="img/flechaderecha.png" class="flechad"></a>
+			
+		</div>
+
+
+		<!-- CONTENEDOR PRINCIPAL: Inlcuye contenedores de Proyectos -->
+
+		<div id="principal">
+
+
+
+
+
+			
+
+		</div>
+
+		<!-- MENÚ INFERIOR PÁGINAS PARA DISPOSITIVOS PEQUEÑOS, MÓVILES Y TABLETS -->
+
+		<div>
+			<ul class="paginas">
+				<a href="index.html"><li>1</li></a>
+				<a href="index2.html"><li>2</li></a>
+				<a href="index3.html"><li>3</li></a>
+				<a href="index4.html"><li>4</li></a>
+				<a href="index5.html"><li>5</li></a>
+				<a href="#"><li>6</li></a>
+			</ul>
+		</div>
+
+		<!-- NO DESACTIVA INDEX2 Y SUCESIVOS EL MENÚ INFERIOR 'PÁGINAS' CUANDO SE CAMBIA A ESCRITORIOS -->
+		<style>
+			@media (min-width: 993px) {
+					/* Desactivar Menú Páginas */
+					.paginas {
+						display: block;
+					}
+			}
+		</style>
+
+		<!-- PIE DE PÁGINA -->
+		<footer>
+
+			<div class="f1">
+
+				<img src="img/ministerio.png" class="footermin">
+
+			</div>
+			
+			<div class="f2">
+
+				<p>Copyright @ 2025 Víctor Álvarez</p>
+
+			</div>
+
+		</footer>
+
+	</body>
+
+</html>

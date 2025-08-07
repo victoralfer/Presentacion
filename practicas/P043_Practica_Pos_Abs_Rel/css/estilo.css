@@ -1,0 +1,118 @@
+/* ----------------------------------------------- */
+/* ----------------------------------------------- */
+/* ----------------------------------------------- */
+/* --------------- HOJA DE ESTILOS --------------- */
+/* ----------------------------------------------- */
+/* ----------------------------------------------- */
+/* ----------------------------------------------- */
+
+/* CAPA PRINCIPAL: Posición Relativa */
+
+#principal {
+	border: 3px solid black;
+	box-shadow: 2px 2px 2px black;
+	width: 1040px;
+	height: 540px;
+	margin: 50px auto;
+	position: relative;
+}
+
+	#principal:hover {
+		border: 3px solid blue;
+	}
+
+/* FORMATO CAPAS */
+#capa1, #capa2, #capa3, #capa4, #capa5, #capa6 {
+	width: 100px;
+	height: 100px;
+	margin: 20px;
+	box-shadow: 2px 2px 1px black;
+}
+
+	#capa1:hover, #capa2:hover, #capa3:hover, #capa4:hover, #capa5:hover, #capa6:hover {
+		cursor: pointer;
+	}
+
+/* Capa Azul: Posición Absoluta con respecto a Capa Principal */
+/* Tiene un 'z-index' (prioridad) de 2, por lo que estará por encima de la capa6 (rosa) */
+#capa1 {
+	background-color: blue;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 2;
+}
+
+/* Capa Amarilla: Posición Absoluta con respecto a Capa Principal */
+#capa2 {
+	background-color: yellow;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+/* Capa Celeste: Posición Absoluta con respecto a Capa Principal */
+#capa3 {
+	background-color: #137d62;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+
+/* Capa Naranja: Posición Absoluta con respecto a Capa Principal */
+#capa4 {
+	background-color: orange;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+
+/* Capa Verde: Posición Absoluta con respecto a Capa Principal */
+#capa5 {
+	background-color: green;
+	position: absolute;
+	top: 200px;
+	left: 450px;
+}
+
+/* Capa Rosa: Posición Absoluta con respecto a Capa Principal */
+/* Tiene un 'z-index' (prioridad) de 1 */
+#capa6 {
+	background-color: pink;
+	position: absolute;
+	top: 40px;
+	left: 40px;
+	z-index: 1;
+}
+
+/* FORMATO TÍTULOS Y PÁRRAFOS */
+h2, p {
+	text-align: center;
+	color: white;
+	font-family: arial;
+	margin: 0;
+}
+
+p {
+	padding-top: 10px;
+}
+	
+	/* Formato Títulos y Párrafos capa2 (amarilla) y capa4 (naranja) */
+	.amarillo, .naranja, .rosa {
+		color: black;
+	}
+
+/* FORMATO TÍTULOS CAPA PRINCIPAL */
+h1, h3 {
+	text-align: center;
+	font-family: arial;
+}
+
+h1 {
+	margin-top: 20px;
+	margin-bottom: 5px;
+}
+
+h3 {
+	margin-top: 0;
+}

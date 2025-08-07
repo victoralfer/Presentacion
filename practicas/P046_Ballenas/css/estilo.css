@@ -1,0 +1,318 @@
+/* ----------------------------------------------- */
+/* ----------------------------------------------- */
+/* ----------------------------------------------- */
+/* --------------- HOJA DE ESTILOS --------------- */
+/* ----------------------------------------------- */
+/* ----------------------------------------------- */
+/* ----------------------------------------------- */
+
+body {
+	font-family: arial;
+	background-color: #a5c7f0;
+}
+
+
+/* ----- ENLACES ----- */
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+
+/* ------ CABECERA ------ */
+header {
+	width: 95%;
+	margin: 0 auto;
+	display: flex;			/* ALINEAR IMAGEN EN EL CENTRO DE SU CONTENEDOR */
+	align-items: center;
+}
+
+	/* Imagen Cabecera */
+	header img {
+		width: 100%;
+		border-radius: 20px 20px 0 0;
+	}
+
+/* ------ MENÚ SUPERIOR ------ */
+
+nav {
+	width: 95%;
+	margin: 0 auto;
+	background-color: rgba(48, 60, 138, 0.5);
+	display: block;
+}
+
+	/* Lista Menú Horizontal */
+	nav ul {
+		margin: 0;
+		padding: 0;
+		list-style-type: none;
+		font-size: 0.9em;
+		color: white;
+		font-weight: bold;
+		display: flex;
+		justify-content: center;
+	}
+
+	/* Elementos Lista Menú Horizontal */
+	nav ul li {
+		padding: 15px;
+		font-size: 0.8em;
+	}
+
+	/* Hover Elementos Lista Menú Horizontal */
+	nav ul li:hover {
+		background-color: white;
+		color: blue;
+		border-radius: 5px;
+		box-shadow: 2px 2px 3px black;
+		cursor: pointer;
+	}
+
+
+/* ------ CONTENEDOR PRICIPAL ------ */
+#principal {
+	margin: 0 auto;
+	width: 95%;
+	display: flex;
+}
+
+
+/* ------ MENÚ VERTICAL ------ */
+
+aside {
+	width: 20%;
+	margin: 0 auto;
+	background-color: rgba(48, 60, 138, 0.2);
+	display: none;
+}
+
+	/* Títulos Menú Vertical */
+	aside h4 {
+		padding: 10px 14px;
+		margin-top: 0px;
+		margin-bottom: 0;
+		background-color: rgba(48, 60, 138, 0.7);
+		color: white;
+		border: 5px double black;
+	}
+	
+	/* Título Menú Vertical: Información*/
+	.titpr {
+		margin-top: 20px;
+	}
+
+	/* Lista Menú Vertical */
+	aside ul {
+		list-style-type: none;
+		padding: 0;
+		margin: 8px 0;
+	}
+
+	/* Elementos Lista Menú Vertical */
+	aside ul li {
+		padding: 10px 14px;
+		font-size: 0.8em;
+		font-weight: bold;
+	}
+
+	/* Hover Elementos Lista Menú Vertical */
+	aside ul li:hover {
+		background-image: url("../img/icono-menu-vertical.png");
+		background-repeat: no-repeat;
+		background-size: 30px;
+		background-position: right;
+		background-color: white;
+		cursor: pointer;
+		border-radius: 0 10px 10px 0;
+	}
+
+/* ------ SECTION ------ */
+
+section {
+	margin: 0 auto;
+	padding: 0 10px;
+	width: 100%;
+	background-color: rgba(48, 60, 138, 0.1);
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-evenly;
+	align-content: flex-start;
+}
+
+/* ------ ARTICLES ------ */
+
+/* Artículo 1 */
+.uno {
+	width: 100%;
+	margin: 10px 0;
+}
+
+	/* Título Artículo 1 */
+	.uno h2 {
+		margin: 10px;
+		text-align: center;
+		color: white;
+		text-shadow: 2px 2px 3px black;
+	}
+
+/* Artículos 2, 3 y 4 */
+.dos, .tres, .cuatro {
+	width: 30%;
+	margin: 10px 0;
+}
+
+	/* Imágenes Artículos 2, 3 y 4 */
+	.dos img, .tres img, .cuatro img {
+		width: 100%;
+		border-radius: 20px;
+	}
+
+	/* Hover Imágenes Artículos 2, 3 y 4 */
+	.dos img:hover, .tres img:hover, .cuatro img:hover {
+		opacity: 0.6;
+		cursor: pointer;
+	}
+
+
+
+/* Artículo 5 */
+.cinco {
+	width: 100%;
+	margin: 10px 0;
+}
+
+	/* Párrafo Artículo 5 */
+	.cinco p {
+		margin: 0 10px 20px 10px;
+		text-align: justify;
+		text-indent: 30px;
+		font-size: 0.9em;
+		line-height: 1.5em;
+
+	}
+
+	.cinco hr {
+		margin: 20px 10px;
+	}
+
+/* ----- FOOTER ----- */
+footer {
+	margin: 0 auto;
+	padding: 0;
+	width: 95%;
+	background-color: rgba(48, 60, 138, 0.5);
+	border-radius: 0 0 20px 20px;
+}
+
+footer h5 {
+	margin: 0;
+	padding: 10px;
+	text-align: center;
+	color: white;
+}
+
+/* -------------------------------- */
+/* ------------ PECES ------------- */
+/* -------------------------------- */
+
+/* ARTÍCULO PECES */
+.galeria {
+	width: 100%;
+	padding: 15px 0;
+	display: flex;
+	flex-flow: row wrap;
+	gap: 15px 0;
+	justify-content: space-evenly;
+	align-content: center;
+	background-color: rgba(48, 60, 138, 0.5);
+}
+
+	/* Contenedores 15 imágenes */
+	.galeria div {
+		width: 30%;
+		display: flex;		/* ALINEAR UNA IMAGEN EN EL CENTRO CONTENEDOR */
+		align-items: center;
+	}
+
+	/* 15 imágenes */
+	.galeria div img {
+		width: 100%;
+	}
+
+	/* HOver 15 imágenes */
+	.galeria div img:hover {
+		opacity: 0.5;
+	}
+
+
+	/* Sección de Especies */
+	.especies {
+		width: 100%;
+		text-align: center;
+	}
+
+		/* Título Sección de Especies */
+		.especiesTP {
+			width: 60%;
+			margin: 10px auto 0 auto;
+			padding: 10px;
+			background-color: rgba(48, 60, 138, 0.7);
+			border-radius: 20px;
+			text-shadow: 2px 2px 3px black;
+			color: white;
+		}
+
+		/* Imagen Sección de Especies */
+		.especies img {
+			width: 90%;
+			margin: 20px 0 0 0;
+		}
+
+		/* Pie de Imagen de Especies */
+		.especiesPP {
+			width: 100%;
+			margin: 10px 0 20px 0;
+			font-style: italic;
+		}
+
+
+/* -------------------------------- */
+/* -------------------------------- */
+
+
+
+/* -------------------------------- */
+/* -------------------------------- */
+/* ---------- RESPONSIVE ---------- */
+/* --------- First Mobile --------- */
+/* -------------------------------- */
+/* -------------------------------- */
+
+
+/* Tamaño Tablets */
+
+@media (min-width: 768px) {
+
+	/* Desactivar Menú Horizontal a partir de 769px */
+	nav {
+		display: NONE;
+	}
+
+
+	/* Activar Menú Vertical a partir de 769px */
+	aside {
+		display: block;
+	}
+
+	/* Cambio del Ancho de la Sección de Artículos */
+	section {
+		width: 80%;
+	}
+
+	/* Cambio del Ancho de la Galería de 
+	Imágenes de PECES, TIBURONES Y BALLENAS */
+	.galeria {
+		width: 80%;
+	}
+}

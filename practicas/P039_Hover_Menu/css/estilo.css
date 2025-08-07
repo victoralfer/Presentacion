@@ -1,0 +1,96 @@
+/* ----------------------------------------------- */
+/* ----------------------------------------------- */
+/* ----------------------------------------------- */
+/* --------------- HOJA DE ESTILOS --------------- */
+/* ----------------------------------------------- */
+/* ----------------------------------------------- */
+/* ----------------------------------------------- */
+
+#principal {
+	display: flex;
+	flex-wrap: wrap;								/* BAJAR COLUMNAS A OTRA FILA EN FLEX */
+	gap: 10px;										/* ESPACIO ENTRE CONTENEDORES (FILA Y COLUMNA) EN FLEX */
+}
+
+.prueba1, .prueba2 {
+	background-color: pink;
+	width: 300px;
+	border: 2px dashed blue;
+	margin: auto;
+	flex-basis: 45%;
+}
+
+h3 {
+	padding: 5px 10px;
+	margin-bottom: 0;
+	font-family: arial;
+	text-align: center;
+	text-decoration: underline green;
+	line-height: 30px;								/* ESPACIO ENTRE LÍNEAS */
+}
+
+ul {
+	padding: 20px 10px;
+	margin-top: 0;
+	margin-bottom: 0;
+	margin-left: 10px;
+}
+
+li {
+	font-family: arial black;
+	list-style: none;								/* QUITAR VIÑETAS */
+	padding: 10px 60px;
+	background-image: url("../img/flecha-d.png");
+	background-position: left center;
+	background-repeat: no-repeat;
+	background-size: 30px;
+	margin-right: 85px;
+	text-align: left;
+}
+
+/* PSEUDOCLASE: HOVER CON DIFERENTE BACKGROUND */
+
+/* Hover en los elementos de la lista */
+li:hover {
+	background-image: url("../img/flecha-i.png");
+	background-color: yellow;
+	border-radius: 10px;							/* BORDES REDONDEADOS */										
+	color: blue;
+	cursor: pointer;								/* CAMBIAR EL CURSOR */
+}
+
+/* Hover en el contenedor div */
+.prueba1:hover, .prueba2:hover {
+	border: 2px solid green;
+}
+
+/* Hover en el título h3 */
+h3:hover {
+	text-decoration: underline blue;
+}
+
+/* HOVER CON UNA MISMA IMAGEN DE BACKGROUND */
+
+.prueba2 {
+	background-color: lightblue;
+}
+
+.prueba2 li {
+	background-image: url("../img/flecha.png");
+	background-position: 10px 14px;
+}
+
+.prueba2 li:hover {
+	background-image: url("../img/flecha.png");
+	background-position: 10px -20px;
+}
+
+/* -------------------------------- */
+/* ---------- RESPONSIVE ---------- */
+/* -------------------------------- */
+
+@media (max-width: 768px) {
+	.prueba1, .prueba2 {
+		flex-basis: 100%;
+	}
+}

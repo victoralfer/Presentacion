@@ -1,0 +1,510 @@
+/* ----------------------------------------------- */
+/* ----------------------------------------------- */
+/* ----------------------------------------------- */
+/* --------------- HOJA DE ESTILOS --------------- */
+/* ----------------------------------------------- */
+/* ----------------------------------------------- */
+/* ----------------------------------------------- */
+
+
+/* CABECERA */
+header {
+	margin: 0 auto;
+	text-align: center;
+}
+
+header img {
+	width: 100%;
+}
+
+/* --------------------------------- */
+/* --------- MENÚ SUPERIOR --------- */
+/* --------------------------------- */
+
+/* Sólo está activo para dispositivos pequeños (menores 768px) */
+
+nav {
+	text-align: center;
+	display: block;
+	position: sticky;		/* Fija el contenedor */
+	top: 10px;
+	margin-bottom: 10px;
+	margin-left: 0;
+}
+
+nav ul {
+	display: inline-block;
+	vertical-align: top;
+	background-color: rgba(23, 49, 89, 0.7);
+	border-radius: 5px;
+	padding: 5px;
+	margin: 0;
+}
+
+nav ul li {
+	list-style-type: none;
+	display: inline-block;
+	padding: 10px;
+	font-family: arial black;
+	font-size: 0.8em;
+	color: white;
+}
+
+nav ul li:hover {
+	background-color: black;
+	border-radius: 5px;
+	color: white;
+}
+
+/* ----- ENLACES ----- */
+
+/* Quitar subyrado a los enlaces */
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+
+/* ----- PÁRRAFOS ----- */
+
+/* Espaciado entre líneas en párrafos normales */
+p {
+	line-height: 25px;
+}
+
+
+/* CONTENEDOR PRINCIPAL: Incluye los contenedores 'aside' y 'section' */
+
+#principal {
+	margin: 0 auto;
+	display: flex;
+	column-gap: 2px;
+	width: 100%;
+	justify-content: space-evenly;
+}
+
+/* --------------------------------- */
+/* --------- MENÚ VERTICAL --------- */
+/* --------------------------------- */
+
+/* Sólo se activa a partir de 768px */
+
+aside {
+	display: none;
+	margin: 0 auto;
+}
+
+	/* ---- Categorías Botones ---- */
+
+	/* Formato Botones Proyectos y Apuntes */
+	.botonp {
+		padding: 8px;
+		text-align: center;
+		color: white;
+		font-family: arial;
+	}
+
+	/* Botón Proyetos */
+	.proy {
+		background-color: #173159;
+		margin: 0 10px 4px 10px;
+	}
+
+	/* Botones Apuntes */
+	.apuntes {
+		background-color: #2c4e85;
+		font-size: 0.9em;
+		margin: 4px 10px;
+	}
+
+	/* Hover Botones de Proyectos y Apuntes */
+	.proy:hover, .apuntes:hover {
+		background-color: black;
+	}
+
+	/* Separador Menú Vertical */
+	aside hr {
+		width: 80%;
+		margin-bottom: 7px;
+	}
+
+	/* Formatos Títulos Menú Vertical */
+	aside h4 {
+		text-align: center;
+		font-family: arial;
+		color: white;
+		padding: 8px;
+		margin: 0 10px;
+		background-color: rgba(26, 104, 163, 0.7);
+	}
+
+	/* Títulos Menú Vertical: Selectores y Propiedades */
+	.catvert {
+		border-radius: 10px 10px 0 0;
+		background-color: rgba(26, 104, 163, 1);
+		text-shadow: 2px 2px 2px black;
+	}
+
+	/* Títulos de Propiedades: Formato, Listas, Posicionamiento y + Propiedades */
+	.propvert {
+		border-radius: 0 0 10px 10px;
+	}
+
+	/* Lista Menú Vertical */
+	aside ul {
+		margin: 5px 0;
+		padding: 0 20px;
+		list-style-type: none;
+	}
+
+	/* Elementos Menú Vertical */
+	aside ul li {
+		margin: 5px 0;
+		padding: 4px;
+		font-family: arial;
+		font-size: 0.8em;
+		font-weight: bold;
+	}
+
+	/* Hover Elementos Menú Vertical */
+	aside ul li:hover {
+		background-color: rgba(245, 243, 225, 0.9);
+		border-radius: 5px;
+	}
+
+/* --------------------------- */
+/* -------- ÁRTÍCULOS -------- */
+/* --------------------------- */
+
+/* El contenedor 'section' contiene los contenedores 'article' */
+section {
+	flex-basis: 100%;
+	margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 8px 2px;		/* Margen entre filas (8px) y entre columnas (2px) */
+	justify-content: space-evenly;
+}
+
+/* Artículos */
+article {
+	flex-basis: 100%;
+	background-color: rgba(245, 243, 225, 0.2);
+	border-radius: 0 0 20px 20px;
+}
+
+/* Hover Artículos */
+article:hover {
+	background-color: rgba(245, 243, 225, 0.5);
+	border-radius: 20px;
+	box-shadow: 2px 2px 2px black;
+	cursor: url("../img/css3-cursor.png"), auto;
+}
+
+/* Imagen Sintaxis Selectores */
+.imgsintaxis {
+	width: 100%;
+}
+
+/* Asterisco del Selector Universal */
+.bg {
+	padding-left: 30px;
+	background-image: url("../img/asterisco.png");
+	background-size: 20px;
+	background-repeat: no-repeat;
+	background-position: left;
+}
+
+/* Imagen Box-Model */
+.imgboxmodel {
+	width: 100%;
+	margin: 10px 0 0 0;
+}
+
+/* Títulos Principales de los Artículos */
+.h2article {
+	font-family: arial;
+	color: white;
+	background-color: rgba(26, 104, 163, 0.7);
+	text-shadow: 2px 2px 2px black;
+	text-align: center;
+	margin: 0 auto;
+	padding: 8px;
+	border: 1px solid black;
+	border-radius: 20px 20px 0 0;
+}
+
+/* Títulos Internos */
+h4 {
+	margin: 15px 15px 0 15px;
+	font-family: arial;
+	text-align: center;
+	line-height: 23px;
+	padding: 5px;
+	background-color: rgba(245, 243, 225, 0.9);
+	border: 1px solid;
+	border-radius: 12px;
+}
+
+/* Títulos Internos más pequeños */
+h5 {
+	text-align: center;
+	font-family: arial;
+	margin: 15px 15px 0 15px;
+	text-decoration: underline;
+}
+
+	/* Títulos Internos más pequeños - Alineados izquierda */
+	.alinearizquierda {
+		text-align: left;
+		margin-left: 20px;
+	}
+
+/* Párrafos */
+p {
+	margin: 15px;
+	text-align: center;
+	font-family: arial;
+}
+
+/* Separadores */
+hr {
+	width: 25%;
+	margin-bottom: 15px;
+}
+
+/* LISTAS ORDENADAS Y DESORDENADAS DE LOS ARTÍCULOS */
+
+/* Tipo de Numeración Listas Ordenadas */
+ol {
+	list-style-type: lower-roman;
+}
+
+/* Tipo de Viñeta Listas Desordenadas */
+article ul {
+	list-style-type: square;
+	text-align: left;
+}
+
+/* Formato de Elementos de las Listas Ordenadas y Desordenadas */
+ol li, article ul li {
+	font-family: arial;
+	font-style: italic;
+	margin-right: 15px;
+	margin-left: 20px;
+	margin-bottom: 8px;
+}
+
+/* Viñeta de Subelementos */
+ul ul li {
+	list-style-type: circle;
+}
+
+
+
+/* ----- SPANs ----- */
+
+	/* span para media querys */
+	.mq {
+		font-weight: bold;
+		color: #eb7d34;
+	}
+
+	/* span para identificadores */
+	.cont {
+		font-weight: bold;
+		color: #5c104f;
+	}
+
+	/* span para clases */
+	.clase {
+		font-weight: bold;
+		color: purple;
+	}
+
+	/* span para etiquetas */
+	.etiqueta {
+		font-weight: bold;
+		color: red;
+	}
+
+	/* span para propiedades */
+	.propiedades {
+		font-style: italic;
+		color: blue;
+	}
+
+	/* span para pseudo-clases */
+	.pseudoclase {
+		font-weight: bold;
+	}
+
+	/* span para resaltados */
+	.resaltado {
+		font-weight: bold;
+		background-color: yellow;
+	}
+
+	/* span para negrita y subrayado */
+	.negrita {
+		font-weight: bold;
+		text-decoration: underline;
+	}
+
+	/* span negrita */
+	.negrita2 {
+		font-weight: bold;
+	}
+
+
+
+/* FORMATO EXPLICACIÓN DE LOS EJEMPLOS */
+.explicacion {
+	margin: 0 15px 15px 15px;
+	text-align: justify;
+	line-height: 25px;
+	text-indent: 20px;
+	font-family: arial;
+	font-style: italic;
+}
+
+
+/* IMÁGENES ALINEACIÓN EN FLEXBOX */
+.alineacion {
+	text-align: center;
+}
+
+	/* Imagen Justify-Content y Aligns*/
+	.alineacion img {
+		width: 95%;
+		border-radius: 20px;
+	}
+	
+
+/* IMAGEN FLEX-BOX y WRAP*/
+.flexboxex, .wrap {
+	margin-top: 10px;
+}
+
+/* HOVER IMAGEN FLEX-BOX*/
+.flexboxex:hover {
+	box-shadow: 2px 2px 2px #1d3d70;
+	cursor: zoom-in;
+}
+
+
+/* ---------- FOOTER ---------- */
+
+footer {
+	width: 100%;
+	margin-top: 15px;
+	padding: 0;
+	border-radius: 0 0 10px 10px;
+	background-color: pink;
+	display: flex;
+	flex-flow: row;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+	/* Logos Footer */
+	.f1 {
+		width: 40%;
+		margin-top: 5px;
+		padding: 0;
+		text-align: left;
+	}
+
+		.f1 img {
+			width: 50%;
+			margin: 10px 20px;
+			padding: 0;
+		}
+
+
+	/* Copyright Footer */
+	.f2 {
+		width: 60%;
+		margin-top: 5px;
+	}
+
+		.f2 p {
+			text-align: right;
+			margin-right: 15px;
+			font-family: arial;
+			font-size: 0.7em;
+			font-weight: bold;
+			font-style: italic;
+		}
+
+
+/* ---- BOTÓN VOLVER ARRIBA ---- */
+
+.volver {
+	width: 50px;
+	position: fixed;	/* Fijar imagen en una posición */
+	bottom: 20px;
+	left: 20px;
+	opacity: 0.4;
+}
+
+.volver:hover {
+	opacity: 0.8;
+}
+
+
+/* ---------------------- */
+/* ---------------------- */
+/* ----- RESPONSIVE ----- */
+/* ---- MOBILE FIRST ---- */
+/* ---------------------- */
+/* ---------------------- */
+
+/* Dispostivos mayores que una tablet */
+/* 2 columnas sin menú vertical */
+
+@media (min-width: 768px) {
+
+	section {
+		flex-basis: 100%;
+	}
+
+	article {
+		flex-basis: 49.5%;
+	}
+
+	/* Temaño Copyright */
+	.f2 p {
+		font-size: 0.8em;
+	}
+}
+
+/* Dispostivos mayores que un escritorio */
+/* 3 columnas con menú vertical */
+
+@media (min-width: 992px) {
+	
+	/* Desactivar Menú de Navegación Horizontal */
+	nav {
+		display: none;
+	}
+
+	/* Activar Menú de Navegación Vertical */
+	aside {
+		display: block;
+		flex-basis: 20%;
+	}
+
+	section {
+		flex-basis: 80%;
+	}
+
+	article {
+		display: block;
+		flex-basis: 33%;
+	}
+
+	.f2 p {
+		font-size: 0.9em;
+	}
+}

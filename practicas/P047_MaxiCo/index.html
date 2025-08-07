@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+
+		<meta charset="utf-8">
+		<meta name="author" content="Víctor">
+		<meta name="description" content="Información sobre CSS3 y HTML5">
+		<meta name="keywords" content="flexbox, pseudo-clases, listas, box-model, selectores, capas, formato">
+		<meta name="robots" content="index,follow">
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximun-scale=1.5, miniman-scale=0.8">
+		
+		<link rel="stylesheet" type="text/css" href="css/estilo.css">
+
+		<title>Página de Noticias CSS</title>
+
+	</head>
+
+	<body>
+		
+		<!-- MENÚ HORIZONTAL -->
+		<nav>
+		
+			<!-- Menú Horizontal: Logo -->
+			<div class="logo">
+		
+				<img src="img/focyl.png" alt="logo focyl">
+				
+			</div>
+			
+			<!-- Menú Horizontal: Lista -->
+			<div class="menuhorizontal">
+				<ul>
+					<li>Inicio</li>
+					<li>Formato</li>
+					<li>Listas</li>
+					<li>Colocación</li>
+					<li>Capas</li>
+				</ul>
+			</div>
+		
+		</nav>
+		
+		<!-- CABECERA -->
+		<header>
+		
+			<img src="img/cabecera-trans.png" alt="imagen cabecera css3">
+		
+		</header>
+		
+		
+		<!-- CONTENEDOR PRINCIPAL -->
+		<section>
+		
+			<!-- Destacado 1 -->
+			<article class="destacado">
+			
+				<div class="tit">
+				
+					<img src="img/icono-carpeta.png" alt="icono carpeta">
+		
+					<h3>Selectores</h3>
+					
+				</div>
+				
+				<h4>¿Qué son?</h4>
+				
+				<p>En CSS, un selector es una parte de la regla 
+				CSS que indica a qué elementos HTML se aplicarán 
+				los estilos definidos en esa regla. Esencialmente, 
+				es la forma de especificar qué elementos de la 
+				página web se verán afectados por las reglas CSS.
+				</p>
+				
+				<h5>Leer +</h5>
+			
+			</article>
+			
+			
+			<!-- Destacado 2 -->
+			<article class="destacado">
+			
+				<div class="tit">
+				
+					<img src="img/icono-pantalla.png" alt="icono pantalla">
+		
+					<h3>Box-Model</h3>
+					
+				</div>
+				
+				<h4>¿Qué aporta?</h4>
+				
+				<p>El modelo de caja (box model) de CSS es un 
+				concepto fundamental para el diseño web, que 
+				describe cómo se representan los elementos HTML 
+				en una página como cajas rectangulares. Cada 
+				elemento tiene cuatro áreas principales: contenido, 
+				relleno, borde y margen. 
+				</p>
+				
+				<h5>Leer +</h5>
+			
+			</article>
+			
+			
+			<!-- Destacado 3 -->
+			<article class="destacado">
+			
+				<div class="tit">
+				
+					<img src="img/icono-lista.png" alt="icono lista">
+		
+					<h3>Listas</h3>
+					
+				</div>
+				
+				<h4>¿Cuál es su uso?</h4>
+				
+				<p>En CSS, las listas se pueden personalizar 
+				usando diversas propiedades para modificar su 
+				apariencia, como el tipo de marcador, la posición 
+				y la imagen utilizada. Se pueden aplicar estilos a 
+				listas ordenadas 'ol' y desordenadas 'ul'.
+				</p>
+				
+				<h5>Leer +</h5>
+			
+			</article>
+		
+		
+			<!-- Destacado 4 -->
+			<article class="destacado">
+			
+				<div class="tit">
+				
+					<img src="img/icono-flex.png" alt="icono flex">
+		
+					<h3>FlexBox</h3>
+					
+				</div>
+				
+				<h4>¿Para qué sirve?</h4>
+				
+				<p>Flexbox en CSS es un modelo de diseño 
+				unidimensional que facilita la alineación y 
+				distribución de elementos dentro de un contenedor. 
+				Permite que los elementos se expandan o contraigan 
+				para adaptarse al espacio disponible, creando 
+				diseños flexibles y responsivos. 
+				</p>
+				
+				<h5>Leer +</h5>
+			
+			</article>
+			
+			
+			<!-- Interés -->
+			<article class="interes">
+			
+				<h4>Flex-Flow</h4>
+			
+				<img src="img/flex-wrap.png" alt="imagen funcionamiento flex-wrap">
+				
+				<p>Se utiliza en FLEXBOX para determinar la 
+				dirección de los elementos (filas o columnas) 
+				y si los elementos deben ajustarse o no (wrap). 
+				</p>
+				
+				<ul>
+					<li><span class="negrita">flex-flow:</span> row wrap</li>
+					<li><span class="negrita">flex-flow:</span> row</li>
+					<li><span class="negrita">flex-flow:</span> column wrap</li>
+					<li><span class="negrita">flex-flow:</span> column</li>
+				</ul>
+			
+			</article>
+			
+			
+			<!-- Noticias -->
+			<article class="noticias">
+			
+				<h4>Pseudo-Clases</h4>
+			
+				<!-- Publicación 1 -->
+				<div class="publicacion">
+					
+					<div class="fecha">
+						
+						<h2>28/07</h2>
+					
+					</div>
+					
+					
+					<div class="pubart">
+					
+						<h5>HOVER</h5>
+						
+						<p>Se utiliza para aplicar estilos cuando 
+						el usuario pasa el cursor (ratón) sobre 
+						un elemento.
+						</p>
+	
+					</div>
+				
+				</div>
+				
+				
+				<!-- Publicación 2 -->
+				<div class="publicacion">
+				
+					<div class="fecha">
+						
+						<h2>29/07</h2>
+					
+					</div>
+					
+					
+					<div class="pubart">
+					
+						<h5>FIRST-LINE</h5>
+						
+						<p>Se utiliza para aplicar estilos a la 
+						primera línea de un texto seleccionado.
+						</p>
+	
+					</div>
+				
+				</div>
+				
+				
+				<!-- Publicación 3 -->
+				<div class="publicacion">
+				
+					<div class="fecha">
+						
+						<h2>30/07</h2>
+					
+					</div>
+					
+					
+					<div class="pubart">
+					
+						<h5>FIST LETTER</h5>
+						
+						<p>Se utiliza para aplicar estilos a la 
+						primera letra de un texto seleccionado.
+						</p>
+	
+					</div>
+				
+				
+				</div>
+				
+				<h5 class="botonmore">Ver +</h5>
+			
+			</article>
+	
+		</section>
+		
+		<footer>
+		
+			<div class="footimg html-1">
+				<img src="img/html.png" alt="logo html5">
+			</div>
+			
+			<div class="footimg css-1">
+				<img src="img/css3.png" alt="logo css3">
+			</div>
+			
+			<div class="footimg">
+				<img src="img/javascript.png" alt="logo javascript">
+			</div>
+			
+			<div class="footimg css-2">
+				<img src="img/css3.png" alt="logo css3">
+			</div>
+			
+			<div class="footimg html-2">
+				<img src="img/html.png" alt="logo html5">
+			</div>
+		
+		
+			<div class="footcontacto">
+			
+				<img src="img/focyl.png" alt="logo focyl">
+				
+				<p>C/ Campanillas, 26 - 24008 León</p>
+
+				<p>
+				e-mail: <a href="mailto:formacion@focyl.com" target="_blank">formacion@focyl.com</a>
+				</p>
+
+				<hr>
+				
+				<h5>Copyright @ 2025 Víctor Álvarez</h5>
+			
+			</div>
+			
+			<div class="footrs">
+			
+				<div class="imagenrs">
+					<a href="https://www.facebook.com/grupofocyl" target="_blank">
+						<img src="img/redes/facebook.png" alt="logo facebook">
+					</a>
+				</div>
+				
+				<div class="imagenrs">
+					<a href="https://x.com/GRUPOFOCYL/" target="_blank">
+						<img src="img/redes/x.png" alt="logo x">
+					</a>
+				</div>
+				
+				<div class="imagenrs">
+					<a href="https://www.instagram.com/grupofocyl" target="_blank">
+						<img src="img/redes/instagram.png" alt="logo instagram">
+					</a>
+				</div>
+				
+				<div class="imagenrs">
+					<a href="https://es.pinterest.com/grupofocyl/" target="_blank">
+						<img src="img/redes/pinterest.png" alt="logo pinterest">
+					</a>
+				</div>
+				
+			</div>
+		
+		</footer>
+		
+		
+		
+	
+	</body>
+
+</html>

@@ -1,0 +1,318 @@
+/* ----------------------------------------------- */
+/* ----------------------------------------------- */
+/* ----------------------------------------------- */
+/* --------------- HOJA DE ESTILOS --------------- */
+/* ----------------------------------------------- */
+/* ----------------------------------------------- */
+/* ----------------------------------------------- */
+
+body {
+	margin-top: 0;
+	text-align: center;
+}
+
+header {
+	width: 100%;
+}
+
+header img {
+	width: 100%;
+	margin: 10px auto;
+	padding: 0
+}
+
+/* CAPA TÍTULO DE LA PÁGINA */
+#titulo {
+	position: relative;
+	border: 1px solid white;
+}
+
+
+/* --- FLECHAS SUPERIORES CAMBIO PAGINA */
+/* Flecha derecha cambio de página */
+.flechad {
+	width: 50px;
+	padding-top: 12px;
+	position: absolute;
+	top: 0;
+	right: 5px;
+	opacity: 0.3;
+	display: block;
+}
+
+/* Flecha izquierda cambio de página */
+.flechai {
+	width: 50px;
+	padding-top: 12px;
+	position: absolute;
+	top: 0;
+	left: 5px;
+	opacity: 0.3;
+	display: block;
+}
+
+.flechad:hover, .flechai:hover {
+	opacity: 0.7;
+}
+
+
+
+
+
+/* COLOR ENLACE */
+
+a {
+	color: inherit;
+}
+
+/* ---- MENÚ ---- */
+
+/* Contenedor Menú */
+nav {
+	margin: 0 auto;
+	position: sticky;		/* Fija el contenedor */
+	top: 10px;
+	display: inline-block;
+}
+
+/* Lista del Menú */
+nav ul {
+	list-style-type: none;
+	text-align: center;
+	background-color: lightblue;
+	border-radius: 10px 10px 0 0;
+	padding: 3px;
+	margin: 0;
+	display: inline-block;
+}
+
+/* Elementos del Menú */
+li {
+	display: inline-block;
+	padding: 10px;
+	margin: 0;
+	font-family: "arial";
+	font-weight: bold;
+}
+
+/* Hover de los Elementos del Menú */
+li:hover {
+	background-color: white;
+	color: red;
+	border-radius: 10px 10px 0 0;
+}
+
+
+/* ---- TÍTULOS: PRÁCTICAS ---- */
+h1 {
+	text-align: center;
+	font-family: arial;
+	margin-bottom: 15px;
+}
+
+h6 {
+	margin-top:0;
+	margin-bottom: 10px;
+	font-family: arial;
+}
+
+
+
+/* ---- PRÁCTICAS ---- */
+
+/* Contenedor Principal */
+#principal {
+	width: 100%;
+	padding: 8px 0;
+	text-align: center;
+	border-radius: 20px;
+	background-color: rgba(110, 235, 52, 0.1);
+	display: flex;			/* ACTIVAR FLEX EN PRINCIPAL */
+	flex-flow: row wrap;
+	justify-content: space-around;
+}
+
+/* Contenedores DIV con Proyectos */
+.proyecto {
+	width: 40%;		/* 2 COLUMNAS */
+	padding: 10px;
+	color: slategrey;
+	text-decoration: none;
+	margin: 3px;
+}
+
+	/* Desactivar Contenedores Hijos del 10 al 45 */
+	.proyecto:nth-child(n+11):nth-child(-n+100) {
+		display: none;		
+	}
+
+/* Títulos Proyectos */
+h3 {
+	font-family: arial;
+	color: blue;
+	padding: 10px;
+	margin: auto;
+}
+
+/* Imagen Proyectos */
+img {
+	width: 100px;
+	padding: 10px;
+	margin: auto;
+}
+
+/* Hover de los Contenedores DIV con Proyectos */
+.proyecto:hover {
+	background-color: yellow;
+	border-radius: 20px;
+	box-shadow: 5px 5px 10px;
+}
+
+/* ---------- FOOTER ---------- */
+
+footer {
+	width: 100%;
+	margin-top: 15px;
+	padding: 0;
+	border-radius: 0 0 10px 10px;
+	background-color: pink;
+	display: flex;
+	flex-flow: row;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+	/* Logos Footer */
+	.f1 {
+		width: 40%;
+		margin-top: 5px;
+		padding: 0;
+		text-align: left;
+	}
+
+		.f1 img {
+			width: 50%;
+			margin: 10px 20px;
+			padding: 0;
+		}
+
+
+	/* Copyright Footer */
+	.f2 {
+		width: 60%;
+		margin-top: 5px;
+	}
+
+
+		.f2 p {
+			text-align: right;
+			margin-right: 15px;
+			font-family: arial;
+			font-size: 0.7em;
+			font-weight: bold;
+			font-style: italic;
+		}
+
+
+
+/* ---- MENÚ PÁGINAS ---- */
+
+/* Contenedor Menú Páginas */
+.paginas {
+	text-align: center;
+	margin-top: 5px;
+	padding: 5px 0;
+	background-color: orange;
+	font-size: 0.9em;
+}
+
+/* Elementos Menú Páginas */
+.paginas li {
+	margin-left: 0;
+	margin-right: 0;
+}
+
+/* Hover de Elementos del Menú de Páginas */
+.paginas li:hover {
+	border-radius: 0px;
+	color: blue;
+}
+
+/* Título Footer */
+h5 {
+	font-family: arial;
+	font-style: italic;
+	text-shadow: 1px 2px 3px black;
+	color: white;
+	text-align: right;
+	margin-right: 20px;
+}
+
+/* ---------------------- */
+/* ---------------------- */
+/* ----- RESPONSIVE ----- */
+/* ---- MOBILE FIRST ---- */
+/* ---------------------- */
+/* ---------------------- */
+
+/* MÓVILES */
+@media (min-width: 576px) {
+	.proyecto {
+		width: 28%;		/* 3 COLUMNAS */
+	}
+
+		/* Cambiar Tamaño Logos Footer */
+		.f1 {
+			width: 60%;
+		}
+
+		/* Cambiar Copyright Footer */
+		.f2 {
+			width: 40%;
+		}
+
+}
+
+/* TABLETS */
+@media (min-width: 768px) {
+	.proyecto {
+		width: 21%;		/* 4 COLUMNAS */
+	}
+
+		/* Ampliar Letra Copyright */
+		.f2 p {
+		font-size: 0.9em;
+		}
+
+}
+
+/* PEQUEÑOS ESCRITORIOS: PORTÁTILES */
+@media (min-width: 992px) {
+	.proyecto {
+		width: 16%;		/* 5 COLUMNAS */
+	}
+
+	/* Activar Contenedores Hijos del 11 al 45 */
+	.proyecto:nth-child(n+11):nth-child(-n+100) {
+		display: block;		
+	}
+
+	/* DESACTIVAR FLECHAS SUPERIORES */
+	.flechad, .flechai {
+	display: none;
+	}
+
+
+	/* Desactivar Menú Páginas */
+	.paginas {
+		display: none;
+	}
+
+}
+
+/* GRANDES ESCRITORIOS */
+@media (min-width: 1400px) {
+	.proyecto {
+		width: 14%;		/* 6 COLUMNAS */
+	}
+}

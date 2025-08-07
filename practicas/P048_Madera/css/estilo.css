@@ -1,0 +1,1104 @@
+/* ----------------------------------------------- */
+/* ----------------------------------------------- */
+/* ----------------------------------------------- */
+/* --------------- HOJA DE ESTILOS --------------- */
+/* ----------------------------------------------- */
+/* ----------------------------------------------- */
+/* ----------------------------------------------- */
+
+body {
+	font-family: arial;
+}
+
+/* ---- ENLACES ---- */
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+/* -------------------- */
+/* -------------------- */
+/* ----- CABECERA ----- */
+/* -------------------- */
+/* -------------------- */
+
+header {
+	margin: 10px auto 0 auto;
+	width: 95%;
+	background-image: url("../img/cabecera-fondo.png");
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+
+	/* ----- CAPA CABECERA: TÍTULO E IMAGEN ----- */
+	#cabecera {
+		width: 100%;
+		position: relative;
+		display: flex;
+		flex-flow: row;
+		justify-content: flex-end;
+	}
+		
+		/* Capa Título Cabecera */
+		.titheader {
+			width: 50%;
+			padding: 0 20px;
+			background-color: rgba(168, 117, 50, 1);
+			color: white;
+			border-radius: 30px;
+			position: absolute;
+			top: 50px;
+			left: 0;
+			z-index: 10;
+		}
+			.titheader h1 {
+				text-align: center;
+			}
+			
+
+		/* Capa Imagen Cabecera */
+		.imagenheader {
+			width: 70%;
+			margin-top: 100px;
+			z-index: 9;
+			display: flex;
+			align-items: center;
+		}
+
+			/* Imagen Capa Imagen de Cabecera */
+			.imagenheader img {
+				width: 100%;
+				border-radius: 30px;
+			}
+		
+		/* Menú 'sandwich' */
+		.menucomp {
+			width: 10%;
+			margin: 20px auto;
+			text-align: center;
+			position: absolute;
+			top: 0;
+			right: 0;
+		}
+		
+			/* Imagen Menú 'sandwich' */
+			.menucomp img {
+				width: 40%;
+			}
+			
+			/* Hover Imagen Menú 'sandwich' */
+			.menucomp img:hover {
+				cursor: pointer;
+			}
+			
+		/* Menú Superior */	
+		.menusup {
+			position: absolute;
+			top: 0;
+			right: 0;
+			display: none;
+		}
+		
+			/* Lista Menú Superior */	
+			.menusup ul {
+				list-style-type: none;
+				display: flex;
+				flex-flow: row;
+				justify-content: flex-end;
+			}
+			
+				/* Elementos de la Lista Menú Superior */	
+				.menusup ul li {
+					padding: 10px;
+					margin: 0 10px;
+					border-top: 1px solid white;
+				}
+				
+				/* Hover Elementos de la Lista Menú Superior */	
+				.menusup ul li:hover {
+					border-top: 1px solid rgba(168, 117, 50, 0.8);
+				}
+	
+
+	/* ----- MENÚ HORIZONTAL ----- */
+	nav {
+		margin: 10px auto;
+		width: 100%;
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: space-around;
+		gap: 20px 0;
+	}
+	
+		.menu {
+			width: 45%;
+			background-color: white;
+			border-radius: 10px;
+		}
+		
+		.menu:hover {
+			background-color: rgba(168, 117, 50, 0.8);
+			color: white;
+			cursor: pointer;
+		}
+		
+		.menu img {
+			width: 50%;
+			margin: 20px;
+		}
+		
+		.menu h4 {
+			margin: 8px 10px;
+			font-size: 0.9em;
+		}
+		
+		.menu p {
+			margin: 15px 10px;
+			font-size: 0.8em;
+			line-height: 18px;
+		}
+		
+/* -------------------- */
+/* -------------------- */
+/* ----- SECTION 1 ---- */
+/* -------------------- */
+/* -------------------- */
+
+#section1 {
+	margin: 10px auto 20px auto;
+	padding: 10px 0;
+	width: 95%;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+}
+	
+	/* ---- TÍTULO SECCIÓN VIGAS ---- */
+	.sectit {
+		width: 90%;
+	}
+	
+		/* Formato de Título y Párrafo */
+		.sectit h1, .sectit p {
+			text-align: center;
+			font-weight: bold;
+			color: rgba(168, 117, 50, 1);
+		}
+
+	/* ---- CAPA DE IMÁGENES SECTION ---- */
+	.secimag {
+		width: 45%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+		
+		/* Imágenes Section */
+		.secimag img {
+			width: 100%;
+			border-radius: 5px;
+		}
+		
+		/* Hover Imágenes Section */
+		.secimag img:hover {
+			opacity: 0.5;
+			cursor: zoom-in;
+		}
+		
+	/* ---- CAPA DE IMAGEN LOGO ---- */
+	.seclogo {
+		width: 90%;
+		display: flex;
+		flex-flow: row;
+		justify-content: center;
+	}
+		
+		/* Logo Section */
+		.seclogo img {
+			width: 20%;
+		}
+		
+		/* Hover Imágenes Section */
+		.seclogo img:hover {
+			opacity: 1;
+			cursor: default;
+		}
+
+	
+	/* ---- CAPA PÁRRAFO + IMAGEN ---- */
+	.secinfo {
+		width: 90%;
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: center;
+		align-content: flex-end;
+		align-items: flex-end;
+	}
+	
+		/* Capas Párrafo e Imagen */
+		.secinfop, .secinfoimg {
+			width: 100%;
+			text-align: justify;
+			font-size: 1em;
+			line-height: 20px;
+		}
+
+			.secinfop h4 {
+				font-size: 1.2em;
+			}
+		
+			/* Imagen Capa de Imagen */
+			.secinfoimg img {
+				width: 100%;
+				border-radius: 20px;
+			}
+	
+	
+	/* ---- CAPA IMAGEN + LISTA */
+	.secinfo2 {
+		width: 90%;
+		margin-top: 10px;
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: space-between;
+		align-items: center;
+		gap: 5px;
+	}
+	
+		/* Capas Imagen y Lista */
+		.secinfo2img, .secinfo2ul {
+			width: 100%;
+			overflow: hidden; /* Contenido no desborda la capa */
+			border-radius: 20px;
+		}
+			
+			/* Imagen de la Capa Imagen */
+			.secinfo2img img {
+				width: 100%;
+			}
+			
+			/* Hover Imagen de la Capa Imagen */
+			.secinfo2img img:hover {
+				transform: scale(1.02); /* Aumenta tamaño imagen un 2% */
+				cursor: pointer;
+			}
+			
+			/* Botón 'Ver más Fotos' de la Capa Imagen */
+			.secinfo2img h3 {
+				width: 50%;
+				margin-top: 10px;
+				margin-left: 10px;
+				margin-right: auto;
+				margin-bottom: 2px;
+				padding: 10px;
+				background-color: rgba(168, 117, 50, 1);
+				color: white;
+				text-align: center;
+				border-radius: 10px;
+			}
+			
+			/* Hover Botón 'Ver más Fotos' de la Capa Imagen */
+			.secinfo2img h3:hover {
+				background-color: rgba(168, 117, 50, 0.5);
+				color: black;
+				cursor: pointer;
+			}
+			
+			/* Título de la Capa de la Lista */
+			.secinfo2ul h4 {
+				margin: 10px 20px;
+				padding: 10px;
+				border: 2px solid rgba(168, 117, 50, 0.5);
+			}
+			
+			/* Lista de la Capa de la Lista */
+			.secinfo2ul ul {
+				list-style-type: square;
+				margin-right: 20px;
+			}
+			
+			/* Elementos de la Lista de la Capa de la Lista */
+			.secinfo2ul ul li {
+				padding: 4px 0;
+				font-size: 1em;
+			}
+
+
+/* -------------------- */
+/* -------------------- */
+/* ----- SECTION 2 ---- */
+/* -------------------- */
+/* -------------------- */
+
+#section2 {
+	width: 100%;
+	padding: 0;
+	background: linear-gradient(to right, rgba(168, 117, 50, 0.2) 50%, #ffffff 50%);
+	position: relative;
+}
+
+	/* Imagen de fondo: transparente */
+	.sfondo {
+		width: 100%;
+	}
+
+	/* Contenedores de las imágenes */
+	.simag {
+		width: 22%;
+	}
+
+	/* Hover Contenedores de las imágenes */
+	.simag:hover {
+		color: blue;
+	}
+
+		/* Imágenes de los contenedores de imágenes */
+		.simag img {
+			width: 100%;
+			border-radius: 256px; /* Borde redondeado con mitad tamaño imágenes */
+		}
+	
+		/* Contenedor Imagen 1 */
+		.simg1 {
+			position: absolute;
+			top: 5%;
+			left: 20%;
+			z-index: 2;
+		}
+		
+		/* Contenedor Imagen 2 */
+		.simg2 {
+			position: absolute;
+			bottom: 5%;
+			left: 20%;
+			z-index: 6;
+		}
+
+		/* Contenedor Imagen 3 */
+		.simg3 {
+			position: absolute;
+			top: 5%;
+			right: 18%;
+			z-index: 3;
+		}
+
+		/* Contenedor Imagen 4 */
+		.simg4 {
+			width: 30%;
+			position: absolute;
+			top: 20%;
+			left: 30%;
+			z-index: 5;
+		}
+
+
+		/* Caja de Texto 'Nuestro Equipo' */
+		.cajatexto {
+			width: 77%;
+			padding: 5px 20px;
+			background-color: rgba(168, 117, 50, 0.9);
+			color: white;
+			font-size: 0.8em;
+			text-align: justify;
+			position: absolute;
+			top: 5%;
+			left: 5%;
+			z-index: 6;
+		}
+
+		.cajatexto:hover {
+			box-shadow: 2px 2px 3px black;
+		}
+
+			/* Título Caja de Texto 'Nuestro Equipo' */
+			.cajatexto h4 {
+				margin: 10px 0 5px 0;
+				font-size: 1.5em;
+			}
+
+
+/* -------------------- */
+/* -------------------- */
+/* ----- SECTION 3 ---- */
+/* -------------------- */
+/* -------------------- */
+
+#principal {
+	margin: 0 auto;
+	background-image: url("../img/fondo.jpg");
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+
+#section3 {
+	margin: 0 auto;
+	width: 95%;
+	position: relative;
+}
+	
+	/* Imagen Transparente de Fondo */
+	.section3img {
+		width: 100%;
+	}
+
+	/* Capas de Opiniones */
+	.opinion {
+		width: 43%;
+		text-align: center;
+		background-color: white;
+		box-shadow: 1px 1px 2px black;
+	}
+
+	/* Hover Capa de Opiniones */
+	.opinion:hover {
+		color: blue;
+		box-shadow: 1px 1px 4px blue;
+	}
+
+		/* Imágenes de Capas de Opiniones */
+		.opinion img {
+			margin-top: 10px;
+			width: 25%;
+			border-radius: 75px;
+			box-shadow: 1px 1px 2px black;
+		}
+
+		/* Párrafos Capas de Opiniones */
+		.opinion p {
+			margin: 10px;
+			font-size: 0.7em;
+		}
+
+		/* Nombre de Capas de Opiniones */
+		.opinion h4 {
+			margin-top: 2px;
+			font-size: 0.75em;
+			font-style: italic;
+		}
+
+		/* Capa de Opiniones 1 */
+		.uno {
+			position: absolute;
+			top: 4.5%;
+			left: 4%;
+		}
+
+		/* Capa de Opiniones 2 */
+		.dos {
+			position: absolute;
+			top: 4.5%;
+			right: 4%;
+		}
+
+		/* Capa de Opiniones 3 */
+		.tres {
+			position: absolute;
+			top: 10%;
+			left: 36.5%;
+			display: none;
+		}
+
+		/* Capa de Opiniones 4 */
+		.cuatro {
+			position: absolute;
+			top: 13.5%;
+			left: 4%;
+			display: none;
+		}
+
+		/* Capa de Opiniones 5 */
+		.cinco {
+			position: absolute;
+			top: 13.5%;
+			right: 4%;
+			display: none;
+		}
+
+		/* Capa de Opiniones 6 */
+		.seis {
+			position: absolute;
+			top: 16%;
+			left: 36.5%;
+			display: none;
+		}
+
+		/* Capa de Opiniones74 */
+		.siete {
+			position: absolute;
+			top: 25.5%;
+			left: 4%;
+			display: none;
+		}
+
+		/* Capa de Opiniones 8 */
+		.ocho {
+			position: absolute;
+			top: 25.5%;
+			right: 4%;
+			display: none;
+		}
+
+		/* Capa de Opiniones 9 */
+		.nueve {
+			position: absolute;
+			top: 29%;
+			left: 36.5%;
+			display: none;
+		}
+
+
+
+
+
+
+	/* Capa Muebles de Innovación */
+	.capa-innovacion {
+		width: 100%;
+		background-image: url("../img/fondo-innovacion.png");
+		background-size: 100%;
+		background-repeat: no-repeat;
+	}
+
+		/* Muebles de Innovación */
+		.innovacion {
+			margin: 0 auto;
+			padding-bottom: 10px;
+			width: 90%;
+			text-align: center;;
+		}
+
+			.innovacion h1 {
+				color: rgba(168, 117, 50, 1);
+			}
+
+			/* Imagen Muebles de Innovación */
+			.innovacion img {
+				width: 100%;
+				border-radius: 20px;
+				box-shadow: 2px 2px 3px black;
+			}
+
+			/* Párrafo Muebles de Innovación */
+			.innovacion p {
+				line-height: 25px;
+			}
+
+			/* Botón Muebles de Innovación */
+			.innovacion h4 {
+				width: 50%;
+				margin: 10px auto;
+				padding: 10px;
+				background-color: rgba(168, 117, 50, 0.9);
+				color: white;
+				border-radius: 5px;
+			}
+
+			/* Hover Botón Muebles de Innovación */
+			.innovacion h4:hover {
+				background-color: rgba(168, 117, 50, 0.2);
+				color: black;
+				cursor: pointer;
+			}
+
+
+
+/* -------------------- */
+/* -------------------- */
+/* --- SECTION FINAL -- */
+/* -------------------- */
+/* -------------------- */
+
+
+#final, #final2 {
+	margin: 10px auto;
+	width: 95%;
+	padding: 10px;
+}
+
+
+#final {
+	margin: 10px auto;
+	width: 95%;
+	padding: 10px;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+}
+
+
+#final2 {
+	margin: 0 auto;
+	width: 95%;
+	padding: 10px;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-items: center;
+	row-gap: 20px;
+}
+
+
+#final:hover, #final2:hover {
+	background-color: rgba(168, 117, 50, 0.1);
+	border-radius: 20px;
+}
+
+
+	/* Capa Departamento de Investigación - Título */
+	.mititulo {
+		width: 100%;
+	}
+
+		.mititulo h3 {
+			text-align: center;
+		}
+
+
+	/* Capas Departamento de Investigación - Info */
+	.mip {
+		width: 100%;
+	}
+
+
+		/* Párrafos Capas Departamento de Investigación - Info */
+		.mip p {
+			margin: 10px;
+			font-size: 1em;
+			text-align: justify;
+			line-height: 21px;
+			text-indent: 30px;
+		}
+
+
+		/* Botón Capas Departamento de Investigación - Info */
+		.mip h4 {
+			width: 60%;
+			margin: 20px 0;
+			padding: 5px;
+			font-size: 0.9em;
+			text-align: center;
+			background-color: rgba(168, 117, 50, 0.9);
+			color: white;
+			border-radius: 5px;
+		}
+
+		/* Hover Botón Capas Departamento de Investigación - Info */
+		.mip h4:hover {
+			background-color: rgba(168, 117, 50, 0.2);
+			color: black;
+			cursor: pointer;
+		}
+
+
+		/* CONTACTO: Formulario */
+		.form {
+			width: 90%;
+		}
+
+			/* CONTACTO: Imagen Formulario */
+			.form img {
+				width: 100%;
+				border-radius: 20px;
+			}
+
+
+		/* CONTACTO: Maps */
+		.maps {
+			width: 90%;
+			margin-bottom: 10px;
+		}	
+
+			/* CONTACTO: Iframe Maps */
+			.maps iframe {
+				width: 100%;
+				border-radius: 20px;
+			}
+
+
+
+/* -------------------- */
+/* -------------------- */
+/* ------ FOOTER ------ */
+/* -------------------- */
+/* -------------------- */
+
+
+footer {
+	margin: 20px auto;
+	width: 95%;
+	display: flex;
+	flex-flow: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+	/* Capa Logo Carpintería */
+	.footlogo {
+		width: 25%;
+		display: flex;
+		align-items: center;
+	}
+
+		/* Logo de Capa Logo Carpintería */
+		.footlogo img {
+			width: 100%;
+		}
+
+	/* Capa Redes Sociales y Copyright Carpintería */
+	.footcopy {
+		width: 50%;
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: flex-end;
+		align-items: center;
+	}
+
+		/* Imágenes Redes Sociales */
+		.footcopy img {
+			width: 10%;
+			margin: 5px 0 5px 15px;
+			cursor: pointer;
+		}
+
+		/* Hover Imágenes Redes Sociales */
+		.footcopy img:hover {
+			opacity: 0.5;
+		}
+
+		/* Título Copyright */
+		.footcopy h5 {
+			width: 100%;
+			margin: 10px 0 5px 0;
+			padding: 5px 0;
+			text-align: right;
+			font-size: 0.6em;
+		}
+
+
+
+
+/* -------------------- */
+/* -------------------- */
+/* ---- RESPONSIVE ---- */
+/* --- Mobile First --- */
+/* -------------------- */
+/* -------------------- */
+
+/* DIMENSIONES MÓVILES */
+@media (min-width: 576px) {
+
+		/* Tamaño Letra Caja de Texto 'Nuestro Equipo' */
+		.cajatexto {
+			width: 60%;
+			font-size: 0.8em;
+			position: absolute;
+			top: 20%;
+			left: 20%;
+			font-size: 0.85em;
+		}
+
+
+		/* Dimensiones de las Capas de Opiniones */
+		.opinion {
+			width: 27%;
+		}
+
+			/* Capa de Opiniones 1 */
+			.uno {
+				position: absolute;
+				top: 8.5%;
+				left: 4%;
+			}
+
+			/* Capa de Opiniones 2 */
+			.dos {
+				position: absolute;
+				top: 8.5%;
+				right: 4%;
+			}
+
+
+			/* Capa de Opiniones 3 */
+			.tres {
+				position: absolute;
+				top: 10%;
+				left: 36.5%;
+				display: block;
+			}
+
+
+		/* Capas Departamento de Investigación - Info */
+		.mip {
+			width: 48%;
+			font-size: 1em;
+		}
+
+		/* Botón Capas Departamento de Investigación - Info */
+		.mip h4 {
+			margin: 10px;
+		}
+
+
+		/* --- FOOTER --- */
+
+		/* Imágenes Redes Sociales */
+		.footcopy img {
+			margin: 5px 0 5px 25px;
+		}
+
+		/* Tamaño Título Copyright */
+		.footcopy h5 {
+			font-size: 0.75em;
+		}
+
+
+}
+
+
+/* ----------------------------------------------------- */	
+
+/* ----------------------------------------------------- */	
+
+/* ----------------------------------------------------- */	
+
+/* ----------------------------------------------------- */	
+
+
+
+/* DIMENSIONES TABLET */
+
+@media (min-width: 768px) {
+
+	/* ---- HEADER ---- */
+
+	/* Menú (4 columnas) */
+	.menu {
+		width: 22.5%;
+	}
+	
+	/* Desactivar 'sandwich' */
+	.menucomp {
+		display: none;
+	}
+	
+	/* Activar 'menú superior' */
+	.menusup {
+		display: block;
+	}
+	
+
+	/* ---- SECTION 1 ---- */
+
+	/* Tamaño Título Sección 1 */
+	.sectit h1 {
+		font-size: 2em;
+	}
+	
+	/* Tamaño Sección 1 - Sección Imágenes (3 columnas) */
+	.secimag {
+		width: 30%;
+	}
+
+
+	/* ---- SECTION 2 ---- */
+	/* Tamaño Caja de Texto 'Nuestro Equipo' */
+	.cajatexto {
+		width: 45%;
+		top: 30%;
+		left: 20%;
+	}
+
+
+	/* ---- SECTION 3 ---- */
+		
+		/* Cambio de Posición Capa de Opiniones 1 */
+		.uno {
+			top: 1.5%;
+		}
+
+		/* Cambio de Posición Capa de Opiniones 2 */
+		.dos {
+			top: 1.5%;
+		}
+
+		/* Cambio de Posición Capa de Opiniones 3 */
+		.tres {
+			top: 3%;
+		}
+
+		/* Activación Capa de Opiniones 4 */
+		.cuatro {
+			display: block;
+		}
+
+		/* Activación Capa de Opiniones 5 */
+		.cinco {
+			display: block;
+		}
+
+		/* Activación Capa de Opiniones 6 */
+		.seis {
+			display: block;
+		}
+
+
+
+	/* ---- SECTION FINAL ---- */
+
+		/* Tamaño Título Departamento */
+		.mititulo {
+			width: 22%;
+			align-self: center;
+			font-style: italic;
+		}
+
+		/* Tamaño Párrafos Departamento */
+		.mip {
+			width: 36.5%;
+		}
+
+
+	/* ---- SECTION CONTACTO ---- */
+
+		/* CONTACTO */
+		#final2 {
+			justify-content: space-evenly;
+		}
+
+
+			/* CONTACTO: Título */
+			.titcontacto {
+				width: 90%;
+				text-align: center;
+			}
+
+			/* CONTACTO: Formulario */
+			.form {
+				width: 45%;
+			}
+
+				/* CONTACTO: Imagen Formulario */
+				.form img {
+					width: 100%;
+				}
+
+
+			/* CONTACTO: Maps */
+			.maps {
+				width: 45%;
+			}	
+
+				/* CONTACTO: Iframe Maps */
+				.maps iframe {
+					width: 100%;
+				}
+
+
+		/* --- FOOTER --- */
+
+		/* Imágenes Redes Sociales */
+		.footcopy img {
+			margin: 5px 0 5px 30px;
+		}
+
+		/* Tamaño Título Copyright */
+		.footcopy h5 {
+			font-size: 0.9em;
+		}
+
+
+/* ----------------------------------------------------- */	
+
+/* ----------------------------------------------------- */	
+
+/* ----------------------------------------------------- */	
+
+/* ----------------------------------------------------- */		
+
+
+
+/* DIMENSIONES ESCRITORIO */
+
+@media (min-width: 992px) {
+
+	/* ---- SECTION 1 ---- */
+
+	/* Tamaño Sección 1 - Parráfo + Imagen */
+	.secinfop, .secinfoimg {
+		width: 50%;
+	}
+	
+		/* Capa Párrafo */
+		.secinfop {
+			margin-top: 60px;
+		}
+		
+			/* Párrafo y Título */
+			.secinfop p, .secinfop h4 {
+				margin-left: 60px;
+			}
+			
+		/* Capa Imagen */
+		.secinfoimg {
+			padding-bottom: 50px;
+			display: flex;
+			justify-content: right;
+			align-items: center;
+		}
+			
+			/* Imagen de la Capa Imagen */
+			.secinfoimg img {
+				width: 70%;
+			}
+					
+	
+	/* Tamaño Imagen + Lista */
+	.secinfo2img, .secinfo2ul {
+		width: 45%;
+	}
+
+
+	/* ---- SECTION 2 ---- */
+
+	/* Tamaño Caja de Texto 'Nuestro Equipo' */
+	.cajatexto {
+		width: 35%;
+		top: 51%;
+		left: 47%;
+	}
+
+
+	/* ---- SECTION 3 ---- */
+
+		/* Activación Capa de Opiniones 7 */
+		.siete {
+			display: block;
+		}
+
+		/* Activación Capa de Opiniones 8 */
+		.ocho {
+			display: block;
+		}
+
+		/* Activación Capa de Opiniones 9 */
+		.nueve {
+			display: block;
+		}
+
+
+		/* --- FOOTER --- */
+
+		/* Imágenes Redes Sociales */
+		.footcopy img {
+			margin: 5px 0 5px 35px;
+		}
+
+		/* Tamaño Título Copyright */
+		.footcopy h5 {
+			font-size: 1em;
+		}
+
+
+}

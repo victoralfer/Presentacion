@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+
+		<meta charset="utf-8">
+		<meta name="author" content="Víctor">
+		<meta name="description" content="Información sobre mi sitio web">
+		<meta name="keywords" content="css, margin, padding, border, contenedores">
+		<meta name="robots" content="index,follow">
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximun-scale=1.5, miniman-scale=0.8">
+		
+		<link rel="stylesheet" type="text/css" href="css/estilo.css">
+
+		<title>Prácticas Víctor Álvarez</title>
+
+	</head>
+
+	<body>
+
+		<header>
+
+			<img src="img/cabecera_proy.png" alt="cabecera de proyecto curso">
+
+		</header>
+
+		<!-- MENÚ NAV -->
+		<nav>
+			<ul>
+				<a href="index.html"><li>Proyectos</li></a>
+				<a href="apuntes.html"><li>HTML</li></a>
+				<a href="apuntes_css.html"><li>CSS</li></a>
+			</ul>
+
+		</nav>
+
+		<!-- TÍTULO -->
+
+		<div id="titulo">
+
+			<a href="index.html"><img src="img/flechaizquierda.png" class="flechai"></a>
+
+			<h1>PRÁCTICAS</h1>
+
+			<a href="index3.html"><img src="img/flechaderecha.png" class="flechad"></a>
+
+		</div>
+
+
+		<!-- CONTENEDOR PRINCIPAL: Inlcuye contenedores de Proyectos -->
+
+		<div id="principal">
+
+			<a href="practicas/P011_Ejercicio_Listas_Anidadas_Ordenadas/index.html" class="proyecto" target="_blank">
+				<h3>Práctica 11</h3>
+				<h6>ANIDADAS ORDENADAS</h6>
+				<img src="img/html5.png" alt="logo de html5">	
+			</a>
+
+			<a href="practicas/P012_Tablas/index.html" class="proyecto" target="_blank">
+				<h3>Práctica 12</h3>
+				<h6>TABLAS</h6>
+				<img src="img/html5.png" alt="logo de html5">	
+			</a>
+
+			<a href="practicas/P013_Ejercicio_Tablas/index.html" class="proyecto" target="_blank">
+				<h3>Práctica 13</h3>
+				<h6>EJERCICIO TABLAS</h6>
+				<img src="img/html5.png" alt="logo de html5">	
+			</a>
+
+			<a href="practicas/P014_Tabla_rowspan_colspan/index.html" class="proyecto" target="_blank">
+				<h3>Práctica 14</h3>
+				<h6>COMBINACIÓN CELDAS</h6>
+				<img src="img/html5.png" alt="logo de html5">	
+			</a>
+
+			<a href="practicas/P015_Tabla_6x5/index.html" class="proyecto" target="_blank">
+				<h3>Práctica 15</h3>
+				<h6>EJERCICIO TABLAS 6x5</h6>
+				<img src="img/html5.png" alt="logo de html5">	
+			</a>
+
+			<a href="practicas/P016_Enlaces/index.html" class="proyecto" target="_blank">
+				<h3>Práctica 16</h3>
+				<h6>ENLACES</h6>
+				<img src="img/html5.png" alt="logo de html5">	
+			</a>
+
+			<a href="practicas/P017_Enlaces_2/index.html" class="proyecto" target="_blank">
+				<h3>Práctica 17</h3>
+				<h6>+ ENLACES</h6>
+				<img src="img/html5.png" alt="logo de html5">	
+			</a>
+
+			<a href="practicas/P018_Enlace_Ancla/index.html" class="proyecto" target="_blank">
+				<h3>Práctica 18</h3>
+				<h6>ENLACES DE ANCLA</h6>
+				<img src="img/html5.png" alt="logo de html5">	
+			</a>
+
+			<a href="practicas/P019_Ejercicio_Tabla_Pokemon/index.html" class="proyecto" target="_blank">
+				<h3>Práctica 19</h3>
+				<h6>TABLA POKEMON</h6>
+				<img src="img/html5.png" alt="logo de html5">	
+			</a>
+
+			<a href="practicas/P020_Capas/index.html" class="proyecto" target="_blank">
+				<h3>Práctica 20</h3>
+				<h6>CAPAS</h6>
+				<img src="img/html5.png" alt="logo de html5">	
+			</a>
+
+		</div>
+
+		<!-- MENÚ INFERIOR PÁGINAS PARA DISPOSITIVOS PEQUEÑOS, MÓVILES Y TABLETS -->
+
+		<div>
+			<ul class="paginas">
+ 				<a href="index.html"><li>1</li></a>
+				<a href="#"><li>2</li></a>
+				<a href="index3.html"><li>3</li></a>
+				<a href="index4.html"><li>4</li></a>
+				<a href="index5.html"><li>5</li></a>
+				<a href="index6.html"><li>6</li></a>
+			</ul>
+		</div>
+
+		<!-- NO DESACTIVA INDEX2 Y SUCESIVOS EL MENÚ INFERIOR 'PÁGINAS' CUANDO SE CAMBIA A ESCRITORIOS -->
+		<style>
+			@media (min-width: 993px) {
+					/* Desactivar Menú Páginas */
+					.paginas {
+						display: block;
+					}
+			}
+		</style>
+
+		<!-- PIE DE PÁGINA -->
+		<footer>
+
+			<div class="f1">
+
+				<img src="img/ministerio.png" class="footermin">
+
+			</div>
+			
+			<div class="f2">
+
+				<p>Copyright @ 2025 Víctor Álvarez</p>
+
+			</div>
+
+		</footer>
+
+	</body>
+
+</html>

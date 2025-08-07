@@ -1,0 +1,266 @@
+/* ----------------------------------------------- */
+/* ----------------------------------------------- */
+/* ----------------------------------------------- */
+/* --------------- HOJA DE ESTILOS --------------- */
+/* ----------------------------------------------- */
+/* ----------------------------------------------- */
+/* ----------------------------------------------- */
+
+body {
+	font-family: arial;
+	width: 2020px;
+}
+
+/* ---- TABLA 1 ---- */
+#tabla1 {
+	margin: 0 auto;
+	width: 1980px;
+	border-collapse: collapse;
+}
+
+	/* Título de la Tabla */
+	caption {
+		margin-top: 20px;
+		margin-left: 320px;
+		text-align: left;
+		font-size: 3.8em;
+		font-weight: bold;
+	}
+
+	/* Celdas de la Tabla 1 */
+	#tabla1 td {
+		width: 110px;
+		height: 115px;
+		padding: 0;
+		overflow: hidden;
+		vertical-align: bottom;
+		border: 1px solid black;
+		position: relative;
+	}
+
+		/* Combinación de Celdas */
+		.combinacion {
+			text-align: center;
+		}
+			
+			/* Imagen Combinación de Celdas */
+			.combinacion img {
+				width: 99%;
+			}
+
+
+	/* Numeración Columnas */
+	#tabla1 .fila {
+		text-align: center;
+		vertical-align: top;
+		font-weight: bold;
+		height: 0;
+		padding-top: 10px;
+		border-left: none;
+		border-right: none;
+		border-bottom: none;
+	}
+
+
+	/* Numeración Filas */
+	#tabla1 .columna {
+		text-align: right;
+		vertical-align: middle;
+		font-weight: bold;
+		width: 0;
+		padding-right: 10px;
+		border-left: none;
+		border-top: none;
+		border-bottom: none;
+	}
+
+
+
+	
+/* ---- TABLA 2 ---- */	
+#tabla2 {
+	margin: 50px auto;
+	width: 1760px;
+	border-collapse: collapse;
+}
+	
+	/* Celdas de la Tabla 2 */
+	#tabla2 td {
+		width: 110px;
+		height: 115px;
+		padding: 0;
+		overflow: hidden;
+		vertical-align: center;
+		border: 1px solid black;
+		position: relative;
+	}
+	
+	/* Celda 'Bloques' - Tabla 2 */
+	#tabla2 .bloques {
+		width: 200px;
+		text-align: center;
+	}
+
+		/* Imagen Celda 'Bloques' - Tabla 2 */
+		.bloques img {
+			width: 100%;
+		}
+		
+	
+	/* ---- INFORMACIÓN ---- */
+		
+		/* Texto Izquierda */
+		.masa, .energia, .simbolo, .nombre, .conf {
+			margin-left: 5px;
+			margin-top: 5px;
+		}
+
+		/* Texto Derecha */
+		.num, .electro, .oxi {
+			margin-right: 5px;
+			margin-top: 5px;
+		}
+		
+		
+		/* Masa */
+		.masa {
+			position: absolute;
+			top: 0;
+			left: 0;
+			font-size: 0.76em;
+		}
+		
+		/* Energía Ionización */
+		.energia {
+			position: absolute;
+			top: 20px;
+			left: 0;
+			font-size: 0.7em;
+		}
+		
+		/* Símbolo */
+		.simbolo {
+			position: absolute;
+			top: 36px;
+			left: 0;
+		}
+		
+		/* Nombre */
+		.nombre {
+			position: absolute;
+			top: 74px;
+			left: 0;
+			font-size: 0.75em;
+		}
+		
+		/* Configuración */
+		.conf {
+			position: absolute;
+			top: 95px;
+			left: 0;
+			font-size: 0.6em;
+		}
+		
+		/* Número atómico */
+		.num {
+			position: absolute;
+			top: 0;
+			right: 0;
+			font-size: 1.1em;
+		}
+		
+		/* Electronegatividad */
+		.electro {
+			margin-right: 30px;
+			position: absolute;
+			top: 20px;
+			right: 0;
+			font-size: 0.7em;
+		}
+		
+		/* Estado Oxidación */
+		.oxi {
+			position: absolute;
+			top: 36px;
+			right: 0;
+			font-size: 0.55em;
+		}
+	
+
+
+
+/* -------------------------- */
+/* -------------------------- */
+/* ----- QUITAR BORDES ------ */
+/* -------------------------- */
+/* -------------------------- */	
+
+#tabla1 .quitarbordes1 {
+	border-top: none;
+	border-right: none;
+}
+
+#tabla1 .quitarbordes2 {
+	border-top: none;
+	border-left: none;
+}
+
+#tabla1 .quitarbordes3 {
+	border-top: none;
+	border-left: none;
+	border-right: none;
+}	
+
+#tabla2 .quitarbordes4 {
+	border-top: none;
+	border-left: none;
+	border-bottom: none;
+}		
+
+		
+/* -------------------------- */
+/* -------------------------- */
+/* -------- COLORES --------- */
+/* ------- ELEMENTOS -------- */
+/* -------------------------- */
+
+.nomet {
+	background-color: #ab91ff;
+	color: white;
+}
+
+.alcalino {
+	background-color: #ffc591;
+}
+
+.alcalinoterreo {
+	background-color: #ffdf91;
+}
+
+.transi {
+	background-color: #ecff91;
+}
+
+.otros {
+	background-color: #fff991;
+}
+
+.metaloides {
+	background-color: #92ff9f;
+}
+
+.halogenos {
+	background-color: #f991ff;
+}
+
+.gases {
+	background-color: #91dfff;
+}
+
+.lantanidos {
+	background-color: #d2ff91;
+}
+
+.actinidos {
+	background-color: #b8ff91;
+}

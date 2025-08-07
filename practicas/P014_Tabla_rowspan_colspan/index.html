@@ -1,0 +1,69 @@
+<!DOCTYPE hmtl>
+
+<html>
+	
+	<head>
+	
+		<meta charset="utf-8">
+		<meta name="author" content="Víctor">
+		<meta name="description" content="Ejercicio Tablas de Navegadores">
+		<meta name="keywords" content="tablas, filas, columnas, td, th, colspan, rowspan">
+		<meta name="robots" content="index,follow">
+
+		<title>Tabla con Unión de Celdas</title>
+	
+	</head>
+	
+	<body>
+	
+		<table width="1000px" border="2" cellspacing="0" align="center" cellpadding="10px">
+		
+			<!-- TÍTULO DE LAS TABLAS CON 'CAPTION' -->
+			<caption><strong><font size="7" face="calibri">TÍTULO DE LA TABLA</font></strong></caption>
+			
+			<tr bgcolor="orange" height="75px">
+				<th width="180px"><font face="verdana" size="5"><u>COLUMNA 1</u></font></th>
+				<th><font face="verdana" size="5"><u>COLUMNA 2</u></font></th>
+				<th><font face="verdana" size="5"><u>COLUMNA 3</u></font></th>
+			</tr>
+			
+			<tr align="center" height="150px">
+				<td rowspan="2" bgcolor="yellow">
+					<font face="arial black">Unión de '2' 
+					<br>celdas de '2' filas</font>
+				</td>
+				<td colspan="2" bgcolor="pink" background="img/pantera_rosa.png">
+					<font face="arial black">Unión de '2' 
+					<br>celdas de '2' columnas</font>
+				</td>
+			</tr>
+			
+			<tr align="center" height="150px">
+				<td><font face="arial black">Celda 2.2</font></td>
+				<td><font face="arial black">Celda 2.3</font></td>
+			</tr>
+			
+			<tr align="center" height="100px">
+				<td><font face="arial black">Celda 3.1</font></td>
+				<td><font face="arial black">Celda 3.2</font></td>
+				<td><font face="arial black">Celda 3.3</font></td>
+			</tr>
+			
+			<tr align="center" height="75px">
+				<td colspan="3" bgcolor="#53f400"><font face="arial black" color="blue">Unión de '3' celdas de '3' columnas</font></td>
+			</tr>
+			
+			<tr align="left" height="80px" background="img/focyl.png">
+				<td colspan="3" rowspan="2"><font face="arial black" size="4" color="brown">Unión de '3' columnas y '2' filas completas</font></td>
+			</tr>
+			
+			<tr align="center" height="80px">
+			</tr>
+	
+		</table>
+		
+		<hr width="33.33%">
+	
+	</body>
+
+</html>

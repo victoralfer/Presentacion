@@ -1,0 +1,357 @@
+/* ----------------------------------------------- */
+/* ----------------------------------------------- */
+/* ----------------------------------------------- */
+/* --------------- HOJA DE ESTILOS --------------- */
+/* ----------------------------------------------- */
+/* ----------------------------------------------- */
+/* ----------------------------------------------- */
+
+body {
+	margin: 0 auto;
+	background-color: #303c91;
+	background-image: url("../img/winner.png");
+	background-repeat: no-repeat;
+	background-size: 40px;
+	background-position: top right;
+}
+
+#principal {
+	width: 90%;
+	font-family: verdana;
+	color: white;
+	margin: 0 auto;		/* CENTRA 'ASIDE' Y 'SECTION' */
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+}
+
+
+/* ------ MENÚ VERTICAL ------ */
+aside {
+	width: 20%;
+	text-align: center;
+	font-size: 0.9em;
+	background-color: #1d1042;
+}
+
+/* Logo Menú Vertical */
+.logo {
+	width: 70%;
+	margin-top: 40px;
+}
+
+/* Lista Menú Vertical */
+ul {
+	list-style-type: none;
+	padding: 0;
+	margin-top: 50px;
+	color: white;
+}
+/* Elemenos del Menú */
+li {
+	margin: 10px 0;
+	padding: 10px;
+	font-size: 0.8em;
+}
+
+/* Imagen HTML 5*/
+.html5 {
+	width: 20%;
+	margin-top: 20px;
+	opacity: 0.3;
+}
+
+/* HOVERS DEL MENÚ */
+li:hover {
+	background-color: #303c91;
+	background-image: url("../img/html5punto.png");
+	background-size: 20px;
+	background-repeat: no-repeat;
+	background-position: left;
+	opacity: 0.5;
+}
+
+
+
+/* ------ SECCIÓN: contiene 'articles' ------ */
+section {
+	margin: 0 auto;
+	width: 77%;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;				/* Alineación Eje Primario (Horizontal) */
+	align-items: center;						/* Alineación Eje Secundario (Vertical) */
+}
+
+
+/* ----- ARTÍCULOS ----- */
+
+.art00, .art01 {
+	width: 49%;
+}
+
+ /* Título 'Haciendo' */
+.haciendo {
+	width: 100%;
+}
+
+.haciendoh2 {
+	text-align: center;
+	margin: 20px 0;
+}
+
+.art1, .art2, .art3, .art4 {
+	width: 24%;
+	margin: 0 auto;
+	padding: 0;
+	text-align: center;
+}
+
+.barra {
+	width: 100%;
+}
+
+.art5, .art6{
+	width: 45%;
+	text-align: center;
+}
+
+
+/* Título art00: Hola! */
+.art00 h2 {
+	margin-left: 20px;
+	margin-bottom: 0;
+	font-size: 2em;
+}
+
+/* Subtítulos art00 */
+.art00 h4 {
+	margin-left: 15px;
+	margin-right: 15px;
+	margin-top: 2px;
+	margin-bottom: 0;
+	font-size: 1em;
+}
+
+/* Párrafo art00 */
+.art00 p {
+	margin-left: 15px;
+	margin-right: 15px;
+	font-size: 0.8em;
+}
+
+/* Imagen art00: tablet */
+.tablet {
+	width: 100%;
+}
+
+
+/* PÁRRAFOS INTERMEDIOS */
+
+/* Imágenes art1-art4*/
+.imagenes {
+	width: 70%;
+	margin-top: 10px;
+}
+
+/* HR de las cuatro columnas centrales */
+hr {
+	width: 95%;
+}
+
+/* Párrrafos Intermedio */
+.veinte {
+	margin: 0 auto;
+	width: 95%;
+	text-align: left;
+	font-size: 0.7em;
+}
+
+
+/* BARRA ANTES DE ARTÍCULOS INFERIORES */
+.barra hr {
+	width: 70%;
+	margin-top: 30px;
+	border: 1px dashed #9ca8ff;
+}
+
+
+/* ----- FILA INFERIOR ----- */
+
+
+/* Títulos Inferiores */
+
+.h4inferior {
+	margin-bottom: 0;
+	font-size: 0.8em;
+}
+
+.h3inferior {
+	margin-top: 0;
+	font-size: 1.6em;
+}
+
+.titulosinferiores {
+	margin-left: 20px;
+	text-align: left;
+}
+
+/* Párrafos Inferiores */
+
+.parrafosinferiores {
+	margin-top: 2px;
+	margin-left: 20px;
+	text-align: left;
+	font-size: 0.7em;
+}
+
+
+/* Imágenes inferiores */
+
+.imagenesinferiores {
+	width: 95%;
+}
+
+
+/* ------------------------------------------------ */
+/* ------------------------------------------------ */
+/* ------------------------------------------------ */
+/* ------------------ RESPONSIVE ------------------ */
+/* ------------------------------------------------ */
+/* ------------------------------------------------ */
+/* ------------------------------------------------ */
+
+
+@media (max-width: 1200px) {
+	/* Artículos 1 al 4 de la Capa Section */
+	.art1, .art2, .art3, .art4 {
+		width: 45%;
+	}
+		
+		/* Artículos 1 al 4 de la Capa Section */
+		.art1 p, .art2 p, .art3 p, .art4 p {
+			font-size: 0.9em;
+		}
+
+
+}
+
+
+/* Cambio cuando el tamaño sea menor de 991 px (Tablets) */
+
+@media (max-width: 991px) {
+	
+	body {
+		background-image: none;
+	}
+	
+	/* Capa Principal */
+	#principal {
+		width: 95%;
+	}
+	
+		/* Menú Vertical - Se convierte a horizontal */
+		aside {
+			width: 100%;
+			display: flex;
+			flex-flow: row;
+			justify-content: space-between;
+			align-items: center;
+		}
+		
+			/* Logo Menú Vertical */
+			.logo {
+				margin: 10px;
+				width: 15%;
+			}
+		
+			/* Lista Menú Vertical */
+			ul {
+				width: 80%;
+				margin: 10px auto;
+				display: flex;
+				justify-content: space-around;
+			}
+			
+				/* Elementos Lista Menú Vertical */
+				ul li {
+					margin: 0;
+				}
+			
+				/* Hover Elementos Lista Menú Vertical */
+				ul li:hover {
+					background-image: none;
+					cursor: pointer;
+				}
+			
+			/* Logo HTML5 Menú Vertical */
+			.html5 {
+				display: none;
+			}
+		
+		
+		/* Capa Section */
+		section {
+			width: 100%;
+			gap: 10px;
+		}
+		
+			/* Artículos 00 y 01 de la Capa Section */
+			.art00, .art01 {
+				width: 100%;
+			}
+			
+				/* Párrafos Artículos 00 y 01 de la Capa Section */
+				.art00 p {
+					font-size: 1em;
+				}
+
+			 /* Título 'Haciendo' */
+			.haciendo {
+				width: 100%;
+			}
+
+			/* Artículos 1 al 4 de la Capa Section */
+			.art1, .art2, .art3, .art4 {
+				width: 100%;
+			}
+			
+				/* Imágenes Artículos 1 al 4 de la Capa Section */
+				.art1 img, .art2 img, .art3 img, .art4 img {
+					width: 35%;
+				}
+			
+				/* Párrafos Artículos 1 al 4 de la Capa Section */
+				.art1 p, .art2 p, .art3 p, .art4 p {
+					font-size: 1em;
+				}
+
+			/* Barra Separadora */
+			.barra {
+				width: 100%;
+			}
+
+			/* Artículos 5 y 6 de la Capa Section */
+			.art5, .art6{
+				width: 100%;
+			}
+	
+}
+
+
+/* Cambio cuando el tamaño menor 576px (Dispositivos pequeños) */
+
+@media (max-width: 575px) {
+
+	/* Logo Menú Vertical */
+	.logo {
+		margin: 10px;
+		width: 10%;
+	}
+
+	/* Tamaños Elementos Menú */
+	li {
+		font-size: 0.8em;
+	}
+
+}
